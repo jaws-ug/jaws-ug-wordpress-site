@@ -1,0 +1,23 @@
+{
+  "name": "jawsugwp",
+  "title": "JAWS-UG WordPress theme",
+  "description": "WordPress theme for JAWS DAYS and JAWS FESTA.",
+  "version": "2018.0.0",
+  "homepage": "https://jaws-ug.jp/",
+  "author": {
+    "name": "IGARASHI Kazue",
+    "url": "https://gatespace.jp/"
+  },
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-compass": "^2.1.0",
+    "gulp-jshint": "^2.0.4",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-notify": "^3.0.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-replace": "^0.6.1",
+    "jshint": "^2.9.5",
+    "run-sequence": "^2.2.0"
+  },
+  "keywords": []
+}

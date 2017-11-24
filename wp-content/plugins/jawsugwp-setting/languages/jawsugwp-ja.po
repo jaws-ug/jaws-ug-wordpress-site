@@ -1,0 +1,455 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: JAWS UG WordPress Setting\n"
+"POT-Creation-Date: 2017-11-20 19:43+0900\n"
+"PO-Revision-Date: 2017-11-20 19:43+0900\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 2.0.4\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: jawsugwp-setting.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: jawsugwp-setting.php:89
+msgctxt "Taxonomy General Name"
+msgid "Tracks"
+msgstr "トラック"
+
+#: jawsugwp-setting.php:90
+msgctxt "Taxonomy Singular Name"
+msgid "Track"
+msgstr "トラック"
+
+#: jawsugwp-setting.php:91
+msgid "Track"
+msgstr "トラック"
+
+#: jawsugwp-setting.php:92 jawsugwp-setting.php:319
+msgid "All Tracks"
+msgstr "すべてのトラック"
+
+#: jawsugwp-setting.php:93
+msgid "Parent Track"
+msgstr "親トラック"
+
+#: jawsugwp-setting.php:94
+msgid "Parent Track:"
+msgstr "親トラック:"
+
+#: jawsugwp-setting.php:95
+msgid "New Track Name"
+msgstr "新規トラック名"
+
+#: jawsugwp-setting.php:96
+msgid "Add New Track"
+msgstr "新規トラック追加"
+
+#: jawsugwp-setting.php:97
+msgid "Edit Track"
+msgstr "トラックを編集"
+
+#: jawsugwp-setting.php:98
+msgid "Update Track"
+msgstr "トラックを更新"
+
+#: jawsugwp-setting.php:99
+msgid "View Track"
+msgstr "トラックを表示"
+
+#: jawsugwp-setting.php:100
+msgid "Separate tracks with commas"
+msgstr "トラックが複数ある場合はコンマで区切ってください"
+
+#: jawsugwp-setting.php:101
+msgid "Add or remove tracks"
+msgstr "トラックを追加、削除する"
+
+#: jawsugwp-setting.php:102 jawsugwp-setting.php:136 jawsugwp-setting.php:170
+#: jawsugwp-setting.php:246
+msgid "Choose from the most used"
+msgstr "よく使われているものから選択"
+
+#: jawsugwp-setting.php:103
+msgid "Popular Tracks"
+msgstr "人気のあるトラック"
+
+#: jawsugwp-setting.php:104
+msgid "Search Tracks"
+msgstr "トラックを検索"
+
+#: jawsugwp-setting.php:105 jawsugwp-setting.php:139 jawsugwp-setting.php:173
+#: jawsugwp-setting.php:249
+msgid "Not Found"
+msgstr "見つかりませんでした"
+
+#: jawsugwp-setting.php:106
+msgid "No tracks"
+msgstr "トラックがありません"
+
+#: jawsugwp-setting.php:107
+msgid "Tracks list"
+msgstr "トラックリスト"
+
+#: jawsugwp-setting.php:108
+msgid "Tracks list navigation"
+msgstr "トラックリストのナビゲーション"
+
+#: jawsugwp-setting.php:123
+msgctxt "Taxonomy General Name"
+msgid "Venues"
+msgstr "会場"
+
+#: jawsugwp-setting.php:124
+msgctxt "Taxonomy Singular Name"
+msgid "Venue"
+msgstr "会場"
+
+#: jawsugwp-setting.php:125
+msgid "Venue"
+msgstr "会場"
+
+#: jawsugwp-setting.php:126 jawsugwp-setting.php:327
+msgid "All Venues"
+msgstr "すべての会場"
+
+#: jawsugwp-setting.php:127
+msgid "Parent Venue"
+msgstr "親会場"
+
+#: jawsugwp-setting.php:128
+msgid "Parent Venue:"
+msgstr "親会場:"
+
+#: jawsugwp-setting.php:129
+msgid "New Venue Name"
+msgstr "新規会場名"
+
+#: jawsugwp-setting.php:130
+msgid "Add New Venue"
+msgstr "新しい会場を追加"
+
+#: jawsugwp-setting.php:131
+msgid "Edit Venue"
+msgstr "会場を編集"
+
+#: jawsugwp-setting.php:132
+msgid "Update Venue"
+msgstr "会場を更新"
+
+#: jawsugwp-setting.php:133
+msgid "View Venue"
+msgstr "会場を表示"
+
+#: jawsugwp-setting.php:134
+msgid "Separate venues with commas"
+msgstr "会場が複数ある場合はコンマで区切ってください"
+
+#: jawsugwp-setting.php:135
+msgid "Add or remove venues"
+msgstr "会場を追加、削除する"
+
+#: jawsugwp-setting.php:137
+msgid "Popular Venues"
+msgstr "人気のある会場"
+
+#: jawsugwp-setting.php:138
+msgid "Search Venues"
+msgstr "会場を検索"
+
+#: jawsugwp-setting.php:140
+msgid "No venues"
+msgstr "会場なし"
+
+#: jawsugwp-setting.php:141
+msgid "Venues list"
+msgstr "会場リスト"
+
+#: jawsugwp-setting.php:142
+msgid "Venues list navigation"
+msgstr "会場リストナビゲーション"
+
+#: jawsugwp-setting.php:157
+msgctxt "Taxonomy General Name"
+msgid "Levels"
+msgstr "難易度"
+
+#: jawsugwp-setting.php:158
+msgctxt "Taxonomy Singular Name"
+msgid "Level"
+msgstr "難易度"
+
+#: jawsugwp-setting.php:159
+msgid "Level"
+msgstr "難易度"
+
+#: jawsugwp-setting.php:160
+msgid "All Levels"
+msgstr "すべての難易度"
+
+#: jawsugwp-setting.php:161
+msgid "Parent Level"
+msgstr "親難易度"
+
+#: jawsugwp-setting.php:162
+msgid "Parent Level:"
+msgstr "親難易度:"
+
+#: jawsugwp-setting.php:163
+msgid "New Level Name"
+msgstr "新規難易度名"
+
+#: jawsugwp-setting.php:164
+msgid "Add New Level"
+msgstr "新規難易度を追加"
+
+#: jawsugwp-setting.php:165
+msgid "Edit Level"
+msgstr "難易度を編集"
+
+#: jawsugwp-setting.php:166
+msgid "Update Level"
+msgstr "難易度を更新"
+
+#: jawsugwp-setting.php:167
+msgid "View Level"
+msgstr "難易度を見る"
+
+#: jawsugwp-setting.php:168
+msgid "Separate levels with commas"
+msgstr "難易度が複数ある場合はコンマで区切ってください"
+
+#: jawsugwp-setting.php:169
+msgid "Add or remove levels"
+msgstr "難易度を追加、削除する"
+
+#: jawsugwp-setting.php:171
+msgid "Popular Levels"
+msgstr "人気のある難易度"
+
+#: jawsugwp-setting.php:172
+msgid "Search Levels"
+msgstr "難易度を検索"
+
+#: jawsugwp-setting.php:174
+msgid "No levels"
+msgstr "難易度なし"
+
+#: jawsugwp-setting.php:175
+msgid "Levels list"
+msgstr "難易度リスト"
+
+#: jawsugwp-setting.php:176
+msgid "Levels list navigation"
+msgstr "難易度リストナビゲーション"
+
+#: jawsugwp-setting.php:191
+msgctxt "Post Type General Name"
+msgid "Sessions"
+msgstr "セッション"
+
+#: jawsugwp-setting.php:192
+msgctxt "Post Type Singular Name"
+msgid "Session"
+msgstr "セッション"
+
+#: jawsugwp-setting.php:193
+msgctxt "Post Type Menu Name"
+msgid "Sessions"
+msgstr "セッション"
+
+#: jawsugwp-setting.php:194 jawsugwp-setting.php:269
+msgid "Parent Item:"
+msgstr "親アイテム："
+
+#: jawsugwp-setting.php:195 jawsugwp-setting.php:270
+msgid "All Items"
+msgstr "すべての項目"
+
+#: jawsugwp-setting.php:196 jawsugwp-setting.php:271
+msgid "View Item"
+msgstr "項目を見る"
+
+#: jawsugwp-setting.php:197 jawsugwp-setting.php:272
+msgid "Add New Item"
+msgstr "新規項目追加"
+
+#: jawsugwp-setting.php:198 jawsugwp-setting.php:273
+msgid "Add New"
+msgstr "新規追加"
+
+#: jawsugwp-setting.php:199 jawsugwp-setting.php:274
+msgid "Edit Item"
+msgstr "項目の編集"
+
+#: jawsugwp-setting.php:200 jawsugwp-setting.php:275
+msgid "Update Item"
+msgstr "項目を更新"
+
+#: jawsugwp-setting.php:201 jawsugwp-setting.php:276
+msgid "Search Item"
+msgstr "項目を検索"
+
+#: jawsugwp-setting.php:202 jawsugwp-setting.php:277
+msgid "Not found"
+msgstr "見つかりません"
+
+#: jawsugwp-setting.php:203 jawsugwp-setting.php:278
+msgid "Not found in Trash"
+msgstr "ごみ箱に見つかりません"
+
+#: jawsugwp-setting.php:206
+msgctxt "Post Type label"
+msgid "Sessions"
+msgstr "セッション"
+
+#: jawsugwp-setting.php:207
+msgctxt "Post Type description"
+msgid "Session"
+msgstr "セッション"
+
+#: jawsugwp-setting.php:233
+msgctxt "Taxonomy General Name"
+msgid "Types"
+msgstr "サポータータイプ"
+
+#: jawsugwp-setting.php:234
+msgctxt "Taxonomy Singular Name"
+msgid "Type"
+msgstr "サポータータイプ"
+
+#: jawsugwp-setting.php:235
+msgid "Type"
+msgstr "サポータータイプ"
+
+#: jawsugwp-setting.php:236 jawsugwp-setting.php:308
+msgid "All Types"
+msgstr "全てのタイプ"
+
+#: jawsugwp-setting.php:237
+msgid "Parent Type"
+msgstr "親タイプ"
+
+#: jawsugwp-setting.php:238
+msgid "Parent Type:"
+msgstr "親タイプ:"
+
+#: jawsugwp-setting.php:239
+msgid "New Type Name"
+msgstr "新規タイプ名"
+
+#: jawsugwp-setting.php:240
+msgid "Add New Type"
+msgstr "新規タイプを追加"
+
+#: jawsugwp-setting.php:241
+msgid "Edit Type"
+msgstr "タイプを編集"
+
+#: jawsugwp-setting.php:242
+msgid "Update Type"
+msgstr "タイプを更新"
+
+#: jawsugwp-setting.php:243
+msgid "View Type"
+msgstr "タイプを表示"
+
+#: jawsugwp-setting.php:244
+msgid "Separate types with commas"
+msgstr "タイプが複数ある場合はコンマで区切ってください。"
+
+#: jawsugwp-setting.php:245
+msgid "Add or remove types"
+msgstr "タイプを追加、削除する"
+
+#: jawsugwp-setting.php:247
+msgid "Popular Types"
+msgstr "人気のタイプ"
+
+#: jawsugwp-setting.php:248
+msgid "Search Types"
+msgstr "タイプの検索"
+
+#: jawsugwp-setting.php:250
+msgid "No types"
+msgstr "タイプがありません"
+
+#: jawsugwp-setting.php:251
+msgid "Types list"
+msgstr "タイプリスト"
+
+#: jawsugwp-setting.php:252
+msgid "Types list navigation"
+msgstr "タイプリストナビゲーション"
+
+#: jawsugwp-setting.php:266
+msgctxt "Post Type General Name"
+msgid "Supporters"
+msgstr "サポーター"
+
+#: jawsugwp-setting.php:267
+msgctxt "Post Type Singular Name"
+msgid "Supporter"
+msgstr "サポーター"
+
+#: jawsugwp-setting.php:268
+msgctxt "Post Type Menu Name"
+msgid "Supporters"
+msgstr "サポーター"
+
+#: jawsugwp-setting.php:281
+msgctxt "Post Type label"
+msgid "Supporters"
+msgstr "サポーター"
+
+#: jawsugwp-setting.php:282
+msgctxt "Post Type description"
+msgid "Supporter"
+msgstr "サポーター"
+
+#: jawsugwp-setting.php:343
+msgid "Start Time"
+msgstr "開始時間"
+
+#: jawsugwp-setting.php:344
+msgid "End Time"
+msgstr "終了時間"
+
+#. Plugin Name of the plugin/theme
+msgid "JAWS UG WordPress Setting"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://github.com/jaws-ug/jaws-ug-wordpress-site"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Setting required when building sites for JAWS DYAS and JAWS FESTA with "
+"WordPress."
+msgstr ""
+"JAWS DYAS や JAWS FESTA 用のサイトをWordPressで構築する場合に必要な設定。"
+
+#. Author of the plugin/theme
+msgid "IGARASHI Kazue"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://gatespace.jp/"
+msgstr ""
+
+#~ msgid ""
+#~ "JAWS UG WordPress Setting. JAWS DYAS や JAWS FESTA 用のサイトをWordPress"
+#~ "で構築する場合に必要な設定。"
+#~ msgstr ""
+#~ "JAWS UG WordPress Setting. JAWS DYAS や JAWS FESTA 用のサイトをWordPress"
+#~ "で構築する場合に必要な設定。"

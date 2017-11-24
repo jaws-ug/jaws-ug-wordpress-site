@@ -1,0 +1,129 @@
+.page-content,
+.entry-content,
+.entry-summary,
+.mceContentBody {
+
+	a {
+		color: $color__link-entry;
+		&:hover,
+		&:focus,
+		&:active {
+			color: $color__link-entry-hover;
+		}
+	}
+	// link btn
+	.btn {
+		display: inline-block;
+		color: $color__link-btn;
+		background-color: $color__background-btn;
+		padding: 0.5em 1em;
+		border-radius: 3px;
+		&:hover,
+		&:focus,
+		&:active {
+			color: $color__link-btn;
+			text-decoration: none;
+			background-color: $color__background-btn-hover;
+		}
+	}
+
+	h1, h2, h3, h4, h5, h6, p {
+		margin-top: 0;
+	}
+
+	h1 {
+		background: $color__background-entry-hedding;
+		border-top: 4px solid $color__border-entry-hedding;
+		border-bottom: 2px solid $color__border-entry-hedding;
+		padding: 0.3em;
+		font-size: 1.8em;
+	}
+	h2 {
+		background: $color__background-entry-hedding;
+		border-top: 4px solid $color__border-entry-hedding;
+		border-bottom: 2px solid $color__border-entry-hedding;
+		padding: 0.3em;
+		font-size: 1.8em;
+	}
+	h3 {
+		border-left: 8px solid $color__background-hr;
+		padding-left: 0.3em;
+		font-size: 1.6em;
+	}
+	h4 {
+		border-left: 5px solid $color__background-hr;
+		padding-left: 0.3em;
+		font-size: 1.4em;
+	}
+	h5 {
+		font-weight: bold;
+		font-size: 1.2em;
+	}
+	h6 {
+		font-weight: bold;
+		font-size: 1em;
+	}
+
+	table {
+		th, td {
+			padding: 0.5em;
+			border: solid 1px $color__background-hr;
+		}
+		th {
+			background: $color__background-entry-th;
+		}
+	}
+	
+	// time table
+	table.timetable {
+		background: white;
+		@include font-size(14);
+		@include mqPC {
+			@include font-size(12);
+			width: 100%;
+			table-layout: fixed;
+		}
+		.time {
+			white-space: nowrap;
+			@include mqPC {
+				width: 4em;
+			}
+		}
+		thead th {
+			background: $color__background-entry-th-timetable;
+			color: $color__text-entry-th-timetable;
+			a {
+				color: $color__link-hover;
+				text-decoration: underline;
+			}
+		}
+		td.time {
+			background: $color__background-entry-th;
+			text-align: center;
+		}
+		.long-cell td {
+			text-align: center;
+		}
+		th > p,
+		td > p {
+			margin-bottom: 0.5em;
+			&::last-child {
+				margin-bottom: 0;
+			}
+		}
+		
+		.footable-row-detail-inner {
+			width: 100%;
+		}
+		.footable-row-detail-row {
+			border-bottom: solid 1px $color__background-hr;
+			&:last-child {
+				border-bottom: none;
+			}
+		}
+		.footable-row-detail-name {
+			width: 5.9em;
+		}
+	}
+
+}

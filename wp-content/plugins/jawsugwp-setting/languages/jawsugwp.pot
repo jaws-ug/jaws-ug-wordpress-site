@@ -1,0 +1,447 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: JAWS UG WordPress Setting\n"
+"POT-Creation-Date: 2017-11-20 17:56+0900\n"
+"PO-Revision-Date: 2017-01-17 12:11+0900\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.4\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: jawsugwp-setting.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: jawsugwp-setting.php:89
+msgctxt "Taxonomy General Name"
+msgid "Tracks"
+msgstr ""
+
+#: jawsugwp-setting.php:90
+msgctxt "Taxonomy Singular Name"
+msgid "Track"
+msgstr ""
+
+#: jawsugwp-setting.php:91
+msgid "Track"
+msgstr ""
+
+#: jawsugwp-setting.php:92 jawsugwp-setting.php:319
+msgid "All Tracks"
+msgstr ""
+
+#: jawsugwp-setting.php:93
+msgid "Parent Track"
+msgstr ""
+
+#: jawsugwp-setting.php:94
+msgid "Parent Track:"
+msgstr ""
+
+#: jawsugwp-setting.php:95
+msgid "New Track Name"
+msgstr ""
+
+#: jawsugwp-setting.php:96
+msgid "Add New Track"
+msgstr ""
+
+#: jawsugwp-setting.php:97
+msgid "Edit Track"
+msgstr ""
+
+#: jawsugwp-setting.php:98
+msgid "Update Track"
+msgstr ""
+
+#: jawsugwp-setting.php:99
+msgid "View Track"
+msgstr ""
+
+#: jawsugwp-setting.php:100
+msgid "Separate tracks with commas"
+msgstr ""
+
+#: jawsugwp-setting.php:101
+msgid "Add or remove tracks"
+msgstr ""
+
+#: jawsugwp-setting.php:102 jawsugwp-setting.php:136 jawsugwp-setting.php:170
+#: jawsugwp-setting.php:246
+msgid "Choose from the most used"
+msgstr ""
+
+#: jawsugwp-setting.php:103
+msgid "Popular Tracks"
+msgstr ""
+
+#: jawsugwp-setting.php:104
+msgid "Search Tracks"
+msgstr ""
+
+#: jawsugwp-setting.php:105 jawsugwp-setting.php:139 jawsugwp-setting.php:173
+#: jawsugwp-setting.php:249
+msgid "Not Found"
+msgstr ""
+
+#: jawsugwp-setting.php:106
+msgid "No tracks"
+msgstr ""
+
+#: jawsugwp-setting.php:107
+msgid "Tracks list"
+msgstr ""
+
+#: jawsugwp-setting.php:108
+msgid "Tracks list navigation"
+msgstr ""
+
+#: jawsugwp-setting.php:123
+msgctxt "Taxonomy General Name"
+msgid "Venues"
+msgstr ""
+
+#: jawsugwp-setting.php:124
+msgctxt "Taxonomy Singular Name"
+msgid "Venue"
+msgstr ""
+
+#: jawsugwp-setting.php:125
+msgid "Venue"
+msgstr ""
+
+#: jawsugwp-setting.php:126 jawsugwp-setting.php:327
+msgid "All Venues"
+msgstr ""
+
+#: jawsugwp-setting.php:127
+msgid "Parent Venue"
+msgstr ""
+
+#: jawsugwp-setting.php:128
+msgid "Parent Venue:"
+msgstr ""
+
+#: jawsugwp-setting.php:129
+msgid "New Venue Name"
+msgstr ""
+
+#: jawsugwp-setting.php:130
+msgid "Add New Venue"
+msgstr ""
+
+#: jawsugwp-setting.php:131
+msgid "Edit Venue"
+msgstr ""
+
+#: jawsugwp-setting.php:132
+msgid "Update Venue"
+msgstr ""
+
+#: jawsugwp-setting.php:133
+msgid "View Venue"
+msgstr ""
+
+#: jawsugwp-setting.php:134
+msgid "Separate venues with commas"
+msgstr ""
+
+#: jawsugwp-setting.php:135
+msgid "Add or remove venues"
+msgstr ""
+
+#: jawsugwp-setting.php:137
+msgid "Popular Venues"
+msgstr ""
+
+#: jawsugwp-setting.php:138
+msgid "Search Venues"
+msgstr ""
+
+#: jawsugwp-setting.php:140
+msgid "No venues"
+msgstr ""
+
+#: jawsugwp-setting.php:141
+msgid "Venues list"
+msgstr ""
+
+#: jawsugwp-setting.php:142
+msgid "Venues list navigation"
+msgstr ""
+
+#: jawsugwp-setting.php:157
+msgctxt "Taxonomy General Name"
+msgid "Levels"
+msgstr ""
+
+#: jawsugwp-setting.php:158
+msgctxt "Taxonomy Singular Name"
+msgid "Level"
+msgstr ""
+
+#: jawsugwp-setting.php:159
+msgid "Level"
+msgstr ""
+
+#: jawsugwp-setting.php:160
+msgid "All Levels"
+msgstr ""
+
+#: jawsugwp-setting.php:161
+msgid "Parent Level"
+msgstr ""
+
+#: jawsugwp-setting.php:162
+msgid "Parent Level:"
+msgstr ""
+
+#: jawsugwp-setting.php:163
+msgid "New Level Name"
+msgstr ""
+
+#: jawsugwp-setting.php:164
+msgid "Add New Level"
+msgstr ""
+
+#: jawsugwp-setting.php:165
+msgid "Edit Level"
+msgstr ""
+
+#: jawsugwp-setting.php:166
+msgid "Update Level"
+msgstr ""
+
+#: jawsugwp-setting.php:167
+msgid "View Level"
+msgstr ""
+
+#: jawsugwp-setting.php:168
+msgid "Separate levels with commas"
+msgstr ""
+
+#: jawsugwp-setting.php:169
+msgid "Add or remove levels"
+msgstr ""
+
+#: jawsugwp-setting.php:171
+msgid "Popular Levels"
+msgstr ""
+
+#: jawsugwp-setting.php:172
+msgid "Search Levels"
+msgstr ""
+
+#: jawsugwp-setting.php:174
+msgid "No levels"
+msgstr ""
+
+#: jawsugwp-setting.php:175
+msgid "Levels list"
+msgstr ""
+
+#: jawsugwp-setting.php:176
+msgid "Levels list navigation"
+msgstr ""
+
+#: jawsugwp-setting.php:191
+msgctxt "Post Type General Name"
+msgid "Sessions"
+msgstr ""
+
+#: jawsugwp-setting.php:192
+msgctxt "Post Type Singular Name"
+msgid "Session"
+msgstr ""
+
+#: jawsugwp-setting.php:193
+msgctxt "Post Type Menu Name"
+msgid "Sessions"
+msgstr ""
+
+#: jawsugwp-setting.php:194 jawsugwp-setting.php:269
+msgid "Parent Item:"
+msgstr ""
+
+#: jawsugwp-setting.php:195 jawsugwp-setting.php:270
+msgid "All Items"
+msgstr ""
+
+#: jawsugwp-setting.php:196 jawsugwp-setting.php:271
+msgid "View Item"
+msgstr ""
+
+#: jawsugwp-setting.php:197 jawsugwp-setting.php:272
+msgid "Add New Item"
+msgstr ""
+
+#: jawsugwp-setting.php:198 jawsugwp-setting.php:273
+msgid "Add New"
+msgstr ""
+
+#: jawsugwp-setting.php:199 jawsugwp-setting.php:274
+msgid "Edit Item"
+msgstr ""
+
+#: jawsugwp-setting.php:200 jawsugwp-setting.php:275
+msgid "Update Item"
+msgstr ""
+
+#: jawsugwp-setting.php:201 jawsugwp-setting.php:276
+msgid "Search Item"
+msgstr ""
+
+#: jawsugwp-setting.php:202 jawsugwp-setting.php:277
+msgid "Not found"
+msgstr ""
+
+#: jawsugwp-setting.php:203 jawsugwp-setting.php:278
+msgid "Not found in Trash"
+msgstr ""
+
+#: jawsugwp-setting.php:206
+msgctxt "Post Type label"
+msgid "Sessions"
+msgstr ""
+
+#: jawsugwp-setting.php:207
+msgctxt "Post Type description"
+msgid "Session"
+msgstr ""
+
+#: jawsugwp-setting.php:233
+msgctxt "Taxonomy General Name"
+msgid "Types"
+msgstr ""
+
+#: jawsugwp-setting.php:234
+msgctxt "Taxonomy Singular Name"
+msgid "Type"
+msgstr ""
+
+#: jawsugwp-setting.php:235
+msgid "Type"
+msgstr ""
+
+#: jawsugwp-setting.php:236 jawsugwp-setting.php:308
+msgid "All Types"
+msgstr ""
+
+#: jawsugwp-setting.php:237
+msgid "Parent Type"
+msgstr ""
+
+#: jawsugwp-setting.php:238
+msgid "Parent Type:"
+msgstr ""
+
+#: jawsugwp-setting.php:239
+msgid "New Type Name"
+msgstr ""
+
+#: jawsugwp-setting.php:240
+msgid "Add New Type"
+msgstr ""
+
+#: jawsugwp-setting.php:241
+msgid "Edit Type"
+msgstr ""
+
+#: jawsugwp-setting.php:242
+msgid "Update Type"
+msgstr ""
+
+#: jawsugwp-setting.php:243
+msgid "View Type"
+msgstr ""
+
+#: jawsugwp-setting.php:244
+msgid "Separate types with commas"
+msgstr ""
+
+#: jawsugwp-setting.php:245
+msgid "Add or remove types"
+msgstr ""
+
+#: jawsugwp-setting.php:247
+msgid "Popular Types"
+msgstr ""
+
+#: jawsugwp-setting.php:248
+msgid "Search Types"
+msgstr ""
+
+#: jawsugwp-setting.php:250
+msgid "No types"
+msgstr ""
+
+#: jawsugwp-setting.php:251
+msgid "Types list"
+msgstr ""
+
+#: jawsugwp-setting.php:252
+msgid "Types list navigation"
+msgstr ""
+
+#: jawsugwp-setting.php:266
+msgctxt "Post Type General Name"
+msgid "Supporters"
+msgstr ""
+
+#: jawsugwp-setting.php:267
+msgctxt "Post Type Singular Name"
+msgid "Supporter"
+msgstr ""
+
+#: jawsugwp-setting.php:268
+msgctxt "Post Type Menu Name"
+msgid "Supporters"
+msgstr ""
+
+#: jawsugwp-setting.php:281
+msgctxt "Post Type label"
+msgid "Supporters"
+msgstr ""
+
+#: jawsugwp-setting.php:282
+msgctxt "Post Type description"
+msgid "Supporter"
+msgstr ""
+
+#: jawsugwp-setting.php:343
+msgid "Start Time"
+msgstr ""
+
+#: jawsugwp-setting.php:344
+msgid "End Time"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "JAWS UG WordPress Setting"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://github.com/jaws-ug/jaws-ug-wordpress-site"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Setting required when building sites for JAWS DYAS and JAWS FESTA with "
+"WordPress."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "IGARASHI Kazue"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://gatespace.jp/"
+msgstr ""

@@ -1,0 +1,39 @@
+.inner {
+	@extend %inner;
+}
+.site-content {
+	background: #ebebe9;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	@include mqPC {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+}
+
+// home.php
+body.home {
+	.site-content {
+		padding: 0;
+		background: #020610;
+	}
+	.main-image {
+		text-align: center;
+		line-height: 1;
+		img {
+			vertical-align: middle;
+		}
+	}
+}
+
+.content-area {
+	@extend %inner;
+}
+
+.site-content .widget-area {
+	width: $size__site-sidebar;
+}
+
+.site-footer {
+	width: $size__site-main;
+}

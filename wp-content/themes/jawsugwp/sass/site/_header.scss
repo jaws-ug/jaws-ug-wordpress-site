@@ -1,0 +1,36 @@
+.site-header {
+	@extend %inner;
+	padding-top: 20px;
+	@include mqPC {
+		padding-top: 30px;
+		padding-bottom: 30px;
+		@include display-flex;
+		@include flex-wrap(nowrap);
+		@include align-items(center);
+
+	}
+}
+
+.site-branding {
+}
+.site-title {
+	margin: 0 auto;
+	text-align: center;
+	line-height: 1;
+	width: 190px;
+	a {
+		display: inline-block;
+	}
+}
+.main-navigation {
+	margin-top: 20px;
+	margin-right: -15px;
+	margin-left: -15px;
+	@include mqPC {
+		margin: 0 0 0 20px;
+		width: 100%;
+		.menu {
+			float: right;
+		}
+	}
+}

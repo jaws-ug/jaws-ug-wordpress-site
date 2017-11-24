@@ -1,0 +1,122 @@
+{
+    "key": "group_583f9bfec2324",
+    "title": "セッション会場：時間",
+    "fields": [
+        {
+            "key": "field_587d882c52e92",
+            "label": "トラック",
+            "name": "track",
+            "type": "taxonomy",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "taxonomy": "session_track",
+            "field_type": "radio",
+            "allow_null": 0,
+            "add_term": 0,
+            "save_terms": 1,
+            "load_terms": 1,
+            "return_format": "id",
+            "multiple": 0
+        },
+        {
+            "key": "field_583f9c0b3c6e5",
+            "label": "会場",
+            "name": "place",
+            "type": "taxonomy",
+            "instructions": "未定の場合は「無」を選択してください",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "taxonomy": "session_venue",
+            "field_type": "radio",
+            "multiple": 0,
+            "allow_null": 1,
+            "return_format": "id",
+            "add_term": 0,
+            "load_terms": 1,
+            "save_terms": 1
+        },
+        {
+            "key": "field_584a29914a9de",
+            "label": "開始時間",
+            "name": "start_time",
+            "type": "time_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "display_format": "G:i",
+            "return_format": "G:i"
+        },
+        {
+            "key": "field_584a29b54a9df",
+            "label": "終了時間",
+            "name": "end_time",
+            "type": "time_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "display_format": "G:i",
+            "return_format": "G:i"
+        },
+        {
+            "key": "field_5861d3e6f34e6",
+            "label": "難易度",
+            "name": "level",
+            "type": "taxonomy",
+            "instructions": "未定の場合は「無」を選択してください",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "taxonomy": "session_level",
+            "field_type": "radio",
+            "multiple": 0,
+            "allow_null": 1,
+            "return_format": "id",
+            "add_term": 0,
+            "load_terms": 1,
+            "save_terms": 1
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "session"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "acf_after_title",
+    "style": "seamless",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1511169553
+}
