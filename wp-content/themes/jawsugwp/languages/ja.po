@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: JAWS-UG WordPress theme\n"
-"POT-Creation-Date: 2017-11-20 19:43+0900\n"
-"PO-Revision-Date: 2017-11-20 19:44+0900\n"
+"POT-Creation-Date: 2017-11-27 21:03+0900\n"
+"PO-Revision-Date: 2017-11-27 21:04+0900\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ja\n"
@@ -22,6 +22,10 @@ msgstr ""
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
 #: 404.php:17
+msgid "404 Not Found."
+msgstr ""
+
+#: 404.php:18
 msgid "Oops! That page can&rsquo;t be found."
 msgstr "お探しのページが見つかりません。"
 
@@ -56,12 +60,16 @@ msgstr "新しいコメント"
 msgid "Comments are closed."
 msgstr "コメントは受け付けていません。"
 
-#: footer.php:35 inc/customizer.php:28
+#: footer.php:29
+msgid "News"
+msgstr ""
+
+#: footer.php:61 inc/customizer.php:45
 #, php-format
 msgid "To participate in the JAWS DAYS %d"
 msgstr "JAWS DAYS %d に参加する"
 
-#: footer.php:41 inc/customizer.php:61
+#: footer.php:67 inc/customizer.php:82
 msgid "Tickets"
 msgstr ""
 
@@ -73,19 +81,19 @@ msgstr "メインメニュー"
 msgid "Footer Menu"
 msgstr "フッターメニュー"
 
-#: functions.php:106
+#: functions.php:116
 msgid "Footer Widget Area"
 msgstr "フッターウィジェットエリア"
 
-#: header.php:25
+#: header.php:34
 msgid "Skip to content"
 msgstr "コンテンツへスキップ"
 
-#: header.php:40
+#: header.php:49
 msgid "Primary Menu"
 msgstr "メインメニュー"
 
-#: inc/custom-header.php:25
+#: inc/custom-header.php:32
 msgid "Default Header Image"
 msgstr "標準のヘッダー画像"
 
@@ -93,19 +101,23 @@ msgstr "標準のヘッダー画像"
 msgid "Theme Options"
 msgstr "テーマオプション"
 
-#: inc/customizer.php:34
+#: inc/customizer.php:31
+msgid "Footer Section View"
+msgstr "フッターセクションの表示"
+
+#: inc/customizer.php:51
 msgid "Footer Section Title"
 msgstr "フッターセクションのタイトル"
 
-#: inc/customizer.php:52
+#: inc/customizer.php:69
 msgid "Button Link Page"
 msgstr "リンクボタンのページ"
 
-#: inc/customizer.php:65
+#: inc/customizer.php:86
 msgid "Button Text"
 msgstr "ボタンのテキスト"
 
-#: inc/customizer.php:82
+#: inc/customizer.php:103
 msgid "Other Text"
 msgstr "他に表示するテキスト"
 
@@ -149,7 +161,7 @@ msgid "% Comments"
 msgstr "%件のコメント"
 
 #. translators: %s: Name of current post
-#: inc/template-tags.php:71 template-parts/content-page.php:41
+#: inc/template-tags.php:71
 #, php-format
 msgid "Edit %s"
 msgstr "%sを編集"
@@ -159,7 +171,7 @@ msgstr "%sを編集"
 msgid "Search Results for: %s"
 msgstr "検索結果: %s"
 
-#: template-parts/content-archive-session.php:86 template-parts/content.php:36
+#: template-parts/content-archive-session.php:41 template-parts/content.php:36
 msgid "Read more &raquo;"
 msgstr ""
 
@@ -189,28 +201,35 @@ msgid ""
 "searching can help."
 msgstr "お探しのコンテンツが見つかりません。検索をお試しください。"
 
-#: template-parts/content-page.php:29 template-parts/content-session.php:182
-#: template-parts/content-single.php:41 template-parts/content-supporter.php:40
+#: template-parts/content-page.php:24 template-parts/content-session.php:132
+#: template-parts/content-single.php:36 template-parts/content-supporter.php:35
 msgid "Pages:"
 msgstr "ページ:"
 
-#: template-parts/content-session.php:94
+#. translators: %s: Name of current post. Only visible to screen readers
+#: template-parts/content-page.php:38 template-parts/content-session.php:146
+#: template-parts/content-single.php:50 template-parts/content-supporter.php:49
+#, php-format
+msgid "Edit <span class=\"screen-reader-text\">%s</span>"
+msgstr "編集: <span class=“screen-reader-text”>%s</span>"
+
+#: template-parts/content-session.php:44
 msgid "Speakers"
 msgstr "登壇者"
 
-#: template-parts/content-session.php:140
+#: template-parts/content-session.php:90
 msgid "Affiliation:"
 msgstr "所属："
 
-#: template-parts/content-session.php:163
+#: template-parts/content-session.php:113
 msgid "Target"
 msgstr "主な聴講者"
 
-#: template-parts/content-session.php:169
+#: template-parts/content-session.php:119
 msgid "Materials"
 msgstr "資料"
 
-#: template-parts/content-session.php:175
+#: template-parts/content-session.php:125
 msgid "Other"
 msgstr "その他"
 

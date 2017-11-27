@@ -119,3 +119,66 @@ function jawsugwp_category_transient_flusher() {
 }
 add_action( 'edit_category', 'jawsugwp_category_transient_flusher' );
 add_action( 'save_post',     'jawsugwp_category_transient_flusher' );
+
+/**
+ * Session Level tag.
+ */
+function the_jawsugwp_session_level() {
+	$levels = get_the_terms( $post->ID, 'session_level' );
+	if ( $levels && ! is_wp_error( $levels ) ) {
+		$levels_array = array();
+		foreach ( $levels as $term ) {
+			$levels_array[] = $term->name;
+		}
+		$levelstext = join( " / ", $levels_array );
+		echo '<span class="session-meta-parts"><i class="fa fa-star" aria-hidden="true"></i> ' . esc_html( $levelstext ) . '</span>' . "\n";
+	}
+}
+
+/**
+ * Session Venue tag.
+ */
+function the_jawsugwp_session_venue() {
+	$venues = get_the_terms( $post->ID, 'session_venue' );
+	if ( $venues && ! is_wp_error( $venues ) ) {
+		$venues_name_array = array();
+		$venues_name = '';
+		$venues_hash_array = array();
+		$venues_hash = '';
+		$text = get_the_title() . ' | ' . get_bloginfo( 'name' );
+		$url  = get_the_permalink();
+		foreach ( $venues as $term ) {
+			$venues_name_array[] = $term->name;
+			$venues_hash_array[] = '<a href="https://twitter.com/intent/tweet?text=' . urlencode( $text ) . '&amp;hashtags=jawsug,jawsdays,' . esc_html( $term->slug ) . '&amp;via=jawsdays&amp;url=' . urlencode( $url ). '" target="_blank">' . esc_html( '#' . $term->slug ) . '</a>';
+		}
+		$venues_name = join( " / ", $venues_name_array );
+		$venues_hash = join( " / ", $venues_hash_array );
+		
+		echo '<span class="session-meta-parts"><i class="fa fa-location-arrow" aria-hidden="true"></i> ' . esc_html( $venues_name ) . '</span>' . "\n";
+		echo '<span class="session-meta-parts"><i class="fa fa-hashtag" aria-hidden="true"></i> ' . $venues_hash . '</span>' . "\n";
+	}
+}
+
+/**
+ * Session Time tag.
+ */
+function the_jawsugwp_session_time() {
+	if ( ! function_exists( 'get_field' ) )
+		return;
+	
+	$start_time = get_field( 'start_time' );
+	$end_time   = get_field( 'end_time' );
+	if ( $start_time || $end_time) {
+		echo '<span class="session-meta-parts"><i class="fa fa-clock-o" aria-hidden="true"></i> ';
+	}
+	if ( $start_time ) {
+		echo get_field( 'start_time' );
+		echo '〜';
+	}
+	if ( $end_time ) {
+		echo get_field( 'end_time' );
+	}
+	if ( $start_time || $end_time) {
+		echo '</span>';
+	}
+}
