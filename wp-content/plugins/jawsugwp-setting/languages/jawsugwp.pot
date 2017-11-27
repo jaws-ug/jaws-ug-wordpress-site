@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: JAWS UG WordPress Setting\n"
-"POT-Creation-Date: 2017-11-20 17:56+0900\n"
+"POT-Creation-Date: 2017-11-27 20:20+0900\n"
 "PO-Revision-Date: 2017-01-17 12:11+0900\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -20,407 +20,407 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
-#: jawsugwp-setting.php:89
+#: includes/manage-post-types.php:11
 msgctxt "Taxonomy General Name"
 msgid "Tracks"
 msgstr ""
 
-#: jawsugwp-setting.php:90
+#: includes/manage-post-types.php:12
 msgctxt "Taxonomy Singular Name"
 msgid "Track"
 msgstr ""
 
-#: jawsugwp-setting.php:91
+#: includes/manage-post-types.php:13
 msgid "Track"
 msgstr ""
 
-#: jawsugwp-setting.php:92 jawsugwp-setting.php:319
+#: includes/manage-post-types.php:14 includes/manage-post-types.php:244
 msgid "All Tracks"
 msgstr ""
 
-#: jawsugwp-setting.php:93
+#: includes/manage-post-types.php:15
 msgid "Parent Track"
 msgstr ""
 
-#: jawsugwp-setting.php:94
+#: includes/manage-post-types.php:16
 msgid "Parent Track:"
 msgstr ""
 
-#: jawsugwp-setting.php:95
+#: includes/manage-post-types.php:17
 msgid "New Track Name"
 msgstr ""
 
-#: jawsugwp-setting.php:96
+#: includes/manage-post-types.php:18
 msgid "Add New Track"
 msgstr ""
 
-#: jawsugwp-setting.php:97
+#: includes/manage-post-types.php:19
 msgid "Edit Track"
 msgstr ""
 
-#: jawsugwp-setting.php:98
+#: includes/manage-post-types.php:20
 msgid "Update Track"
 msgstr ""
 
-#: jawsugwp-setting.php:99
+#: includes/manage-post-types.php:21
 msgid "View Track"
 msgstr ""
 
-#: jawsugwp-setting.php:100
+#: includes/manage-post-types.php:22
 msgid "Separate tracks with commas"
 msgstr ""
 
-#: jawsugwp-setting.php:101
+#: includes/manage-post-types.php:23
 msgid "Add or remove tracks"
 msgstr ""
 
-#: jawsugwp-setting.php:102 jawsugwp-setting.php:136 jawsugwp-setting.php:170
-#: jawsugwp-setting.php:246
+#: includes/manage-post-types.php:24 includes/manage-post-types.php:58
+#: includes/manage-post-types.php:92 includes/manage-post-types.php:169
 msgid "Choose from the most used"
 msgstr ""
 
-#: jawsugwp-setting.php:103
+#: includes/manage-post-types.php:25
 msgid "Popular Tracks"
 msgstr ""
 
-#: jawsugwp-setting.php:104
+#: includes/manage-post-types.php:26
 msgid "Search Tracks"
 msgstr ""
 
-#: jawsugwp-setting.php:105 jawsugwp-setting.php:139 jawsugwp-setting.php:173
-#: jawsugwp-setting.php:249
+#: includes/manage-post-types.php:27 includes/manage-post-types.php:61
+#: includes/manage-post-types.php:95 includes/manage-post-types.php:172
 msgid "Not Found"
 msgstr ""
 
-#: jawsugwp-setting.php:106
+#: includes/manage-post-types.php:28
 msgid "No tracks"
 msgstr ""
 
-#: jawsugwp-setting.php:107
+#: includes/manage-post-types.php:29
 msgid "Tracks list"
 msgstr ""
 
-#: jawsugwp-setting.php:108
+#: includes/manage-post-types.php:30
 msgid "Tracks list navigation"
 msgstr ""
 
-#: jawsugwp-setting.php:123
+#: includes/manage-post-types.php:45
 msgctxt "Taxonomy General Name"
 msgid "Venues"
 msgstr ""
 
-#: jawsugwp-setting.php:124
+#: includes/manage-post-types.php:46
 msgctxt "Taxonomy Singular Name"
 msgid "Venue"
 msgstr ""
 
-#: jawsugwp-setting.php:125
+#: includes/manage-post-types.php:47
 msgid "Venue"
 msgstr ""
 
-#: jawsugwp-setting.php:126 jawsugwp-setting.php:327
+#: includes/manage-post-types.php:48 includes/manage-post-types.php:252
 msgid "All Venues"
 msgstr ""
 
-#: jawsugwp-setting.php:127
+#: includes/manage-post-types.php:49
 msgid "Parent Venue"
 msgstr ""
 
-#: jawsugwp-setting.php:128
+#: includes/manage-post-types.php:50
 msgid "Parent Venue:"
 msgstr ""
 
-#: jawsugwp-setting.php:129
+#: includes/manage-post-types.php:51
 msgid "New Venue Name"
 msgstr ""
 
-#: jawsugwp-setting.php:130
+#: includes/manage-post-types.php:52
 msgid "Add New Venue"
 msgstr ""
 
-#: jawsugwp-setting.php:131
+#: includes/manage-post-types.php:53
 msgid "Edit Venue"
 msgstr ""
 
-#: jawsugwp-setting.php:132
+#: includes/manage-post-types.php:54
 msgid "Update Venue"
 msgstr ""
 
-#: jawsugwp-setting.php:133
+#: includes/manage-post-types.php:55
 msgid "View Venue"
 msgstr ""
 
-#: jawsugwp-setting.php:134
+#: includes/manage-post-types.php:56
 msgid "Separate venues with commas"
 msgstr ""
 
-#: jawsugwp-setting.php:135
+#: includes/manage-post-types.php:57
 msgid "Add or remove venues"
 msgstr ""
 
-#: jawsugwp-setting.php:137
+#: includes/manage-post-types.php:59
 msgid "Popular Venues"
 msgstr ""
 
-#: jawsugwp-setting.php:138
+#: includes/manage-post-types.php:60
 msgid "Search Venues"
 msgstr ""
 
-#: jawsugwp-setting.php:140
+#: includes/manage-post-types.php:62
 msgid "No venues"
 msgstr ""
 
-#: jawsugwp-setting.php:141
+#: includes/manage-post-types.php:63
 msgid "Venues list"
 msgstr ""
 
-#: jawsugwp-setting.php:142
+#: includes/manage-post-types.php:64
 msgid "Venues list navigation"
 msgstr ""
 
-#: jawsugwp-setting.php:157
+#: includes/manage-post-types.php:79
 msgctxt "Taxonomy General Name"
 msgid "Levels"
 msgstr ""
 
-#: jawsugwp-setting.php:158
+#: includes/manage-post-types.php:80
 msgctxt "Taxonomy Singular Name"
 msgid "Level"
 msgstr ""
 
-#: jawsugwp-setting.php:159
+#: includes/manage-post-types.php:81
 msgid "Level"
 msgstr ""
 
-#: jawsugwp-setting.php:160
+#: includes/manage-post-types.php:82
 msgid "All Levels"
 msgstr ""
 
-#: jawsugwp-setting.php:161
+#: includes/manage-post-types.php:83
 msgid "Parent Level"
 msgstr ""
 
-#: jawsugwp-setting.php:162
+#: includes/manage-post-types.php:84
 msgid "Parent Level:"
 msgstr ""
 
-#: jawsugwp-setting.php:163
+#: includes/manage-post-types.php:85
 msgid "New Level Name"
 msgstr ""
 
-#: jawsugwp-setting.php:164
+#: includes/manage-post-types.php:86
 msgid "Add New Level"
 msgstr ""
 
-#: jawsugwp-setting.php:165
+#: includes/manage-post-types.php:87
 msgid "Edit Level"
 msgstr ""
 
-#: jawsugwp-setting.php:166
+#: includes/manage-post-types.php:88
 msgid "Update Level"
 msgstr ""
 
-#: jawsugwp-setting.php:167
+#: includes/manage-post-types.php:89
 msgid "View Level"
 msgstr ""
 
-#: jawsugwp-setting.php:168
+#: includes/manage-post-types.php:90
 msgid "Separate levels with commas"
 msgstr ""
 
-#: jawsugwp-setting.php:169
+#: includes/manage-post-types.php:91
 msgid "Add or remove levels"
 msgstr ""
 
-#: jawsugwp-setting.php:171
+#: includes/manage-post-types.php:93
 msgid "Popular Levels"
 msgstr ""
 
-#: jawsugwp-setting.php:172
+#: includes/manage-post-types.php:94
 msgid "Search Levels"
 msgstr ""
 
-#: jawsugwp-setting.php:174
+#: includes/manage-post-types.php:96
 msgid "No levels"
 msgstr ""
 
-#: jawsugwp-setting.php:175
+#: includes/manage-post-types.php:97
 msgid "Levels list"
 msgstr ""
 
-#: jawsugwp-setting.php:176
+#: includes/manage-post-types.php:98
 msgid "Levels list navigation"
 msgstr ""
 
-#: jawsugwp-setting.php:191
+#: includes/manage-post-types.php:113
 msgctxt "Post Type General Name"
 msgid "Sessions"
 msgstr ""
 
-#: jawsugwp-setting.php:192
+#: includes/manage-post-types.php:114
 msgctxt "Post Type Singular Name"
 msgid "Session"
 msgstr ""
 
-#: jawsugwp-setting.php:193
+#: includes/manage-post-types.php:115
 msgctxt "Post Type Menu Name"
 msgid "Sessions"
 msgstr ""
 
-#: jawsugwp-setting.php:194 jawsugwp-setting.php:269
+#: includes/manage-post-types.php:116 includes/manage-post-types.php:192
 msgid "Parent Item:"
 msgstr ""
 
-#: jawsugwp-setting.php:195 jawsugwp-setting.php:270
+#: includes/manage-post-types.php:117 includes/manage-post-types.php:193
 msgid "All Items"
 msgstr ""
 
-#: jawsugwp-setting.php:196 jawsugwp-setting.php:271
+#: includes/manage-post-types.php:118 includes/manage-post-types.php:194
 msgid "View Item"
 msgstr ""
 
-#: jawsugwp-setting.php:197 jawsugwp-setting.php:272
+#: includes/manage-post-types.php:119 includes/manage-post-types.php:195
 msgid "Add New Item"
 msgstr ""
 
-#: jawsugwp-setting.php:198 jawsugwp-setting.php:273
+#: includes/manage-post-types.php:120 includes/manage-post-types.php:196
 msgid "Add New"
 msgstr ""
 
-#: jawsugwp-setting.php:199 jawsugwp-setting.php:274
+#: includes/manage-post-types.php:121 includes/manage-post-types.php:197
 msgid "Edit Item"
 msgstr ""
 
-#: jawsugwp-setting.php:200 jawsugwp-setting.php:275
+#: includes/manage-post-types.php:122 includes/manage-post-types.php:198
 msgid "Update Item"
 msgstr ""
 
-#: jawsugwp-setting.php:201 jawsugwp-setting.php:276
+#: includes/manage-post-types.php:123 includes/manage-post-types.php:199
 msgid "Search Item"
 msgstr ""
 
-#: jawsugwp-setting.php:202 jawsugwp-setting.php:277
+#: includes/manage-post-types.php:124 includes/manage-post-types.php:200
 msgid "Not found"
 msgstr ""
 
-#: jawsugwp-setting.php:203 jawsugwp-setting.php:278
+#: includes/manage-post-types.php:125 includes/manage-post-types.php:201
 msgid "Not found in Trash"
 msgstr ""
 
-#: jawsugwp-setting.php:206
+#: includes/manage-post-types.php:128
 msgctxt "Post Type label"
 msgid "Sessions"
 msgstr ""
 
-#: jawsugwp-setting.php:207
+#: includes/manage-post-types.php:129
 msgctxt "Post Type description"
 msgid "Session"
 msgstr ""
 
-#: jawsugwp-setting.php:233
+#: includes/manage-post-types.php:156
 msgctxt "Taxonomy General Name"
 msgid "Types"
 msgstr ""
 
-#: jawsugwp-setting.php:234
+#: includes/manage-post-types.php:157
 msgctxt "Taxonomy Singular Name"
 msgid "Type"
 msgstr ""
 
-#: jawsugwp-setting.php:235
+#: includes/manage-post-types.php:158
 msgid "Type"
 msgstr ""
 
-#: jawsugwp-setting.php:236 jawsugwp-setting.php:308
+#: includes/manage-post-types.php:159 includes/manage-post-types.php:233
 msgid "All Types"
 msgstr ""
 
-#: jawsugwp-setting.php:237
+#: includes/manage-post-types.php:160
 msgid "Parent Type"
 msgstr ""
 
-#: jawsugwp-setting.php:238
+#: includes/manage-post-types.php:161
 msgid "Parent Type:"
 msgstr ""
 
-#: jawsugwp-setting.php:239
+#: includes/manage-post-types.php:162
 msgid "New Type Name"
 msgstr ""
 
-#: jawsugwp-setting.php:240
+#: includes/manage-post-types.php:163
 msgid "Add New Type"
 msgstr ""
 
-#: jawsugwp-setting.php:241
+#: includes/manage-post-types.php:164
 msgid "Edit Type"
 msgstr ""
 
-#: jawsugwp-setting.php:242
+#: includes/manage-post-types.php:165
 msgid "Update Type"
 msgstr ""
 
-#: jawsugwp-setting.php:243
+#: includes/manage-post-types.php:166
 msgid "View Type"
 msgstr ""
 
-#: jawsugwp-setting.php:244
+#: includes/manage-post-types.php:167
 msgid "Separate types with commas"
 msgstr ""
 
-#: jawsugwp-setting.php:245
+#: includes/manage-post-types.php:168
 msgid "Add or remove types"
 msgstr ""
 
-#: jawsugwp-setting.php:247
+#: includes/manage-post-types.php:170
 msgid "Popular Types"
 msgstr ""
 
-#: jawsugwp-setting.php:248
+#: includes/manage-post-types.php:171
 msgid "Search Types"
 msgstr ""
 
-#: jawsugwp-setting.php:250
+#: includes/manage-post-types.php:173
 msgid "No types"
 msgstr ""
 
-#: jawsugwp-setting.php:251
+#: includes/manage-post-types.php:174
 msgid "Types list"
 msgstr ""
 
-#: jawsugwp-setting.php:252
+#: includes/manage-post-types.php:175
 msgid "Types list navigation"
 msgstr ""
 
-#: jawsugwp-setting.php:266
+#: includes/manage-post-types.php:189
 msgctxt "Post Type General Name"
 msgid "Supporters"
 msgstr ""
 
-#: jawsugwp-setting.php:267
+#: includes/manage-post-types.php:190
 msgctxt "Post Type Singular Name"
 msgid "Supporter"
 msgstr ""
 
-#: jawsugwp-setting.php:268
+#: includes/manage-post-types.php:191
 msgctxt "Post Type Menu Name"
 msgid "Supporters"
 msgstr ""
 
-#: jawsugwp-setting.php:281
+#: includes/manage-post-types.php:204
 msgctxt "Post Type label"
 msgid "Supporters"
 msgstr ""
 
-#: jawsugwp-setting.php:282
+#: includes/manage-post-types.php:205
 msgctxt "Post Type description"
 msgid "Supporter"
 msgstr ""
 
-#: jawsugwp-setting.php:343
+#: includes/manage-post-types.php:268
 msgid "Start Time"
 msgstr ""
 
-#: jawsugwp-setting.php:344
+#: includes/manage-post-types.php:269
 msgid "End Time"
 msgstr ""
 
