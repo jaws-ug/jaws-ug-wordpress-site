@@ -128,6 +128,5 @@ function jawsugwp_custom_logo( $html ) {
 	return $html;  
 
 }
-// Attach callback to 'tiny_mce_before_init' 
 add_filter( 'get_custom_logo', 'jawsugwp_custom_logo' );
 

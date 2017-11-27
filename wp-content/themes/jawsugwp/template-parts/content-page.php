@@ -13,11 +13,6 @@
 	<header class="entry-header">
 		<?php do_action( 'jawsugwp_before_entry_header' ); ?>
 		<?php the_title( '<h1 class="entry-title screen-reader-text">', '</h1>' ); ?>
-		<?php
-			if ( function_exists( 'sharing_display' ) ) {
-				sharing_display( '', true );
-			}
-		?>
 		<?php do_action( 'jawsugwp_after_entry_header' ); ?>
 	</header><!-- .entry-header -->
 
@@ -33,18 +28,27 @@
 		<?php do_action( 'jawsugwp_after_entry_content' ); ?>
 	</div><!-- .entry-content -->
 
-	<footer class="entry-footer">
-		<?php
-			edit_post_link(
-				sprintf(
-					/* translators: %s: Name of current post */
-					esc_html__( 'Edit %s', 'jawsugwp' ),
-					the_title( '<span class="screen-reader-text">"', '"</span>', false )
-				),
-				'<span class="edit-link">',
-				'</span>'
-			);
-		?>
-	</footer><!-- .entry-footer -->
+	<?php if ( get_edit_post_link() ) : ?>
+		<footer class="entry-footer">
+			<?php
+				edit_post_link(
+					sprintf(
+						wp_kses(
+							/* translators: %s: Name of current post. Only visible to screen readers */
+							__( 'Edit <span class="screen-reader-text">%s</span>', 'jawsugwp' ),
+							array(
+								'span' => array(
+									'class' => array(),
+								),
+							)
+						),
+						get_the_title()
+					),
+					'<span class="edit-link">',
+					'</span>'
+				);
+			?>
+		</footer><!-- .entry-footer -->
+	<?php endif; ?>
 </article><!-- #post-## -->
 
