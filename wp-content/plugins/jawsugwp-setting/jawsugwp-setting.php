@@ -68,6 +68,9 @@ public function plugins_loaded() {
 	// ACF
 	require_once( dirname(__FILE__) . '/includes/acf.php' );
 
+	// Feed
+	require_once( dirname(__FILE__) . '/includes/feed.php' );
+
 	// Yast SEO override
 /*
 	add_filter( 'wpseo_opengraph_image', array( $this, 'jaws_wpseo_opengraph_image' ) );
