@@ -1634,25 +1634,18 @@ p.copyright {
 .mceContentBody p {
   margin-top: 0;
 }
-.page-content h1,
+.page-content h1, .page-content h2,
 .entry-content h1,
-.entry-summary h1,
-.mceContentBody h1 {
-  background: #fafafa;
-  border-top: 4px solid #ccc;
-  border-bottom: 2px solid #ccc;
-  padding: 0.3em;
-  font-size: 1.8em;
-}
-.page-content h2,
 .entry-content h2,
+.entry-summary h1,
 .entry-summary h2,
+.mceContentBody h1,
 .mceContentBody h2 {
   background: #fafafa;
   border-top: 4px solid #ccc;
   border-bottom: 2px solid #ccc;
   padding: 0.3em;
-  font-size: 1.8em;
+  font-size: 1.6em;
 }
 .page-content h3,
 .entry-content h3,
@@ -1660,7 +1653,7 @@ p.copyright {
 .mceContentBody h3 {
   border-left: 8px solid #ccc;
   padding-left: 0.3em;
-  font-size: 1.6em;
+  font-size: 1.4em;
 }
 .page-content h4,
 .entry-content h4,
@@ -1668,18 +1661,14 @@ p.copyright {
 .mceContentBody h4 {
   border-left: 5px solid #ccc;
   padding-left: 0.3em;
-  font-size: 1.4em;
-}
-.page-content h5,
-.entry-content h5,
-.entry-summary h5,
-.mceContentBody h5 {
-  font-weight: bold;
   font-size: 1.2em;
 }
-.page-content h6,
+.page-content h5, .page-content h6,
+.entry-content h5,
 .entry-content h6,
+.entry-summary h5,
 .entry-summary h6,
+.mceContentBody h5,
 .mceContentBody h6 {
   font-weight: bold;
   font-size: 1em;
