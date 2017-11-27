@@ -139,6 +139,8 @@ function the_jawsugwp_session_level() {
  * Session Venue tag.
  */
 function the_jawsugwp_session_venue() {
+	$twitter_via  = get_theme_mod( 'twitter_account', 'jawsdays' );
+	$twitter_hash = get_theme_mod( 'twitter_hash', 'jawsug,jawsdays' );
 	$venues = get_the_terms( $post->ID, 'session_venue' );
 	if ( $venues && ! is_wp_error( $venues ) ) {
 		$venues_name_array = array();
@@ -149,7 +151,7 @@ function the_jawsugwp_session_venue() {
 		$url  = get_the_permalink();
 		foreach ( $venues as $term ) {
 			$venues_name_array[] = $term->name;
-			$venues_hash_array[] = '<a href="https://twitter.com/intent/tweet?text=' . urlencode( $text ) . '&amp;hashtags=jawsug,jawsdays,' . esc_html( $term->slug ) . '&amp;via=jawsdays&amp;url=' . urlencode( $url ). '" target="_blank">' . esc_html( '#' . $term->slug ) . '</a>';
+			$venues_hash_array[] = '<a href="https://twitter.com/intent/tweet?text=' . urlencode( $text ) . '&amp;hashtags=' . esc_attr( $twitter_hash ) . ',' . esc_attr( $term->slug ) . '&amp;via=' . esc_attr( $twitter_via ) . '&amp;url=' . urlencode( $url ). '" target="_blank">' . esc_html( '#' . $term->slug ) . '</a>';
 		}
 		$venues_name = join( " / ", $venues_name_array );
 		$venues_hash = join( " / ", $venues_hash_array );

@@ -22,6 +22,45 @@ function jawsugwp_customize_register( $wp_customize ) {
 		'priority'   => 160,
 	) );
 
+	// SNS facebook AppID
+	$wp_customize->add_setting( 'facebook_app_id', array(
+		'default'           => '1400003920114272',
+		'sanitize_callback' => 'absint',
+		'transport'         => 'postMessage',
+	) );
+	$wp_customize->add_control( 'facebook_app_id', array(
+			'label'    => __( 'Facebook App ID', 'jawsugwp' ),
+			'section'  => 'jawsugwp_theme_options',
+			'settings' => 'facebook_app_id',
+			'type'     => 'text',
+		)
+	);
+
+	// SNS Twitter Account
+	$wp_customize->add_setting( 'twitter_account', array(
+		'default'           => 'jawsdays',
+		'transport'         => 'postMessage',
+	) );
+	$wp_customize->add_control( 'twitter_account', array(
+			'label'    => __( 'Twitter Account', 'jawsugwp' ),
+			'section'  => 'jawsugwp_theme_options',
+			'settings' => 'twitter_account',
+			'type'     => 'text',
+		)
+	);
+	// SNS Twitter hash
+	$wp_customize->add_setting( 'twitter_hash', array(
+		'default'           => 'jawsug,jawsdays',
+		'transport'         => 'postMessage',
+	) );
+	$wp_customize->add_control( 'twitter_hash', array(
+			'label'    => __( 'Twitter Hash', 'jawsugwp' ),
+			'section'  => 'jawsugwp_theme_options',
+			'settings' => 'twitter_hash',
+			'type'     => 'text',
+		)
+	);
+
 	// Footer section use
 	$wp_customize->add_setting( 'footer_section_view', array(
 		'default'           => false,

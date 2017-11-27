@@ -44,7 +44,7 @@
 				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 			</aside>
 			<aside class="widget widget_facebook_likebox">
-				<h2 class="widget-title"><a href="https://www.facebook.com/jawsdays">Facebook</a></h2>
+				<h2 class="widget-title"><a href="https://www.facebook.com/jawsug/">Facebook</a></h2>
 				<div class="fb-page" data-href="https://www.facebook.com/jawsug/" data-tabs="timeline" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/jawsug/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/jawsug/">AWS User Group - Japan (JAWS-UG)</a></blockquote></div>
 			</aside>
 		<?php endif; ?>
@@ -93,9 +93,15 @@
 		<div class="site-info">
 			<div class="social-button">
 				<ul>
-					<li><a href="https://twitter.com/intent/tweet?text=<?php echo rawurlencode( get_bloginfo( 'name' ) ); ?>&url=<?php echo rawurlencode( home_url( '/' ) ); ?>&hashtags=jawsdays,jawsug&via=jawsdays" target="_blank">
+					<?php
+						$twitter_via  = get_theme_mod( 'twitter_account', 'jawsdays' );
+						$twitter_hash = get_theme_mod( 'twitter_hash', 'jawsug,jawsdays' );
+						?>
+
+					<li><a href="https://twitter.com/intent/tweet?text=<?php echo rawurlencode( get_bloginfo( 'name' ) ); ?>&url=<?php echo rawurlencode( home_url( '/' ) ); ?>&hashtags=<?php echo esc_attr( $twitter_hash ); ?>&via=<?php echo esc_attr( $twitter_via ); ?>" target="_blank">
 <i class="fa fa-twitter-square"></i></a></li>
-					<li><a href="https://www.facebook.com/dialog/share?app_id=1400003920114272&href=<?php echo rawurlencode( home_url( '/' ) ); ?>" target="_blank"><i class="fa fa-facebook-official"></i></a></li>
+					<?php $appid = get_theme_mod( 'facebook_app_id', 1400003920114272 ); ?>
+					<li><a href="https://www.facebook.com/dialog/share?app_id=<?php echo $appid; ?>&href=<?php echo rawurlencode( home_url( '/' ) ); ?>" target="_blank"><i class="fa fa-facebook-official"></i></a></li>
 				</ul>
 			</div>
 			<p class="copyright">Copyright &copy; AWS User Group Japan. All rights reserved.</p>
