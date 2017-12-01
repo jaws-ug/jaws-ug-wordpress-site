@@ -71,6 +71,9 @@ public function plugins_loaded() {
 	// Feed
 	require_once( dirname(__FILE__) . '/includes/feed.php' );
 
+	// Disable author archive. 
+	add_filter( 'author_rewrite_rules', '__return_empty_array' );
+
 	// Yast SEO override
 /*
 	add_filter( 'wpseo_opengraph_image', array( $this, 'jaws_wpseo_opengraph_image' ) );
