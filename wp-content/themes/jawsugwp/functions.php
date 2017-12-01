@@ -162,9 +162,9 @@ function jawsugwp_scripts() {
 	 */
 	wp_enqueue_style(
 		'font-awesome',
-		'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css',
+		'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css',
 		array(),
-		'4.5.0'
+		'4.7.0'
 	);
 
 	/**
@@ -174,9 +174,9 @@ function jawsugwp_scripts() {
 	 */
 	wp_enqueue_script(
 		'bxslider',
-		get_template_directory_uri() . '/jquery.bxslider/jquery.bxslider.min.js',
+		'https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js',
 		array(),
-		'4.1.2',
+		'4.2.12',
 		true
 	);
 
