@@ -65,19 +65,19 @@
 				<?php
 					// Blog
 					if ( get_sub_field( 'site_url' ) ) {
-						echo '<a href="' . esc_url( get_sub_field( 'site_url' ) ) . '" target="_blank"><i class="fa fa-globe"></i></a>';
+						echo '<a href="' . esc_url( get_sub_field( 'site_url' ) ) . '" target="_blank"><i class="fas fa-globe"></i></a>';
 					}
 					// Twitter
 					if ( get_sub_field( 'twitter' ) ) {
-						echo '<a href="' . esc_url( 'https://twitter.com/' . get_sub_field( 'twitter' ) ) . '" target="_blank"><i class="fa fa-twitter"></i></a>';
+						echo '<a href="' . esc_url( 'https://twitter.com/' . get_sub_field( 'twitter' ) ) . '" target="_blank"><i class="fab fa-twitter"></i></a>';
 					}
 					// Facebook
 					if ( get_sub_field( 'facebook' ) ) {
-						echo '<a href="' . esc_url( 'https://www.facebook.com/' . get_sub_field( 'facebook' ) ) . '" target="_blank"><i class="fa fa-facebook-official"></i></a>';
+						echo '<a href="' . esc_url( 'https://www.facebook.com/' . get_sub_field( 'facebook' ) ) . '" target="_blank"><i class="fab fa-facebook"></i></a>';
 					}
 					// GitHub
 					if ( get_sub_field( 'github' ) ) {
-						echo '<a href="' . 'https://github.com/' . get_sub_field( 'github' ) . '" target="_blank"><i class="fa fa-github"></i></a>';
+						echo '<a href="' . 'https://github.com/' . get_sub_field( 'github' ) . '" target="_blank"><i class="fab fa-github"></i></a>';
 					}
 				?>
 				</div>

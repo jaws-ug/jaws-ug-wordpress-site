@@ -21,7 +21,7 @@
 		</div>
 		<?php // 登壇者
 			if( have_rows( 'speaker' ) ):
-				echo '<div class="session-meta"><i class="fa fa-microphone" aria-hidden="true"></i> ';
+				echo '<div class="session-meta"><i class="fas fa-microphone"></i> ';
 				// loop through the rows of data
 				$speaker_name_array = array();
 				$speaker_name = '';

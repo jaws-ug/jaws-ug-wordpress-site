@@ -131,7 +131,7 @@ function the_jawsugwp_session_level() {
 			$levels_array[] = $term->name;
 		}
 		$levelstext = join( " / ", $levels_array );
-		echo '<span class="session-meta-parts"><i class="fa fa-star" aria-hidden="true"></i> ' . esc_html( $levelstext ) . '</span>' . "\n";
+		echo '<span class="session-meta-parts"><i class="fas fa-star"></i> ' . esc_html( $levelstext ) . '</span>' . "\n";
 	}
 }
 
@@ -156,8 +156,8 @@ function the_jawsugwp_session_venue() {
 		$venues_name = join( " / ", $venues_name_array );
 		$venues_hash = join( " / ", $venues_hash_array );
 		
-		echo '<span class="session-meta-parts"><i class="fa fa-location-arrow" aria-hidden="true"></i> ' . esc_html( $venues_name ) . '</span>' . "\n";
-		echo '<span class="session-meta-parts"><i class="fa fa-hashtag" aria-hidden="true"></i> ' . $venues_hash . '</span>' . "\n";
+		echo '<span class="session-meta-parts"><i class="fas fa-location-arrow"></i> ' . esc_html( $venues_name ) . '</span>' . "\n";
+		echo '<span class="session-meta-parts"><i class="fas fa-hashtag"></i> ' . $venues_hash . '</span>' . "\n";
 	}
 }
 
@@ -171,7 +171,7 @@ function the_jawsugwp_session_time() {
 	$start_time = get_field( 'start_time' );
 	$end_time   = get_field( 'end_time' );
 	if ( $start_time || $end_time) {
-		echo '<span class="session-meta-parts"><i class="fa fa-clock-o" aria-hidden="true"></i> ';
+		echo '<span class="session-meta-parts"><i class="far fa-clock"></i> ';
 	}
 	if ( $start_time ) {
 		echo get_field( 'start_time' );

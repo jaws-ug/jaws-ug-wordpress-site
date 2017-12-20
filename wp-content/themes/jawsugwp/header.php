@@ -37,7 +37,7 @@
 		</div><!-- .site-branding -->
 
 		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><span class="screen-reader-text"><?php esc_html_e( 'Primary Menu', 'jawsugwp' ); ?></span><i class="fa fa-list-ul"></i></button>
+			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><span class="screen-reader-text"><?php esc_html_e( 'Primary Menu', 'jawsugwp' ); ?></span><i class="fas fa-bars"></i></button>
 			<?php wp_nav_menu( array( 'theme_location' => 'main_menu', 'menu_id' => 'primary-menu' ) ); ?>
 		</nav><!-- #site-navigation -->
 

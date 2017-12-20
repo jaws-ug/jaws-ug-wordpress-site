@@ -98,10 +98,9 @@
 						$twitter_hash = get_theme_mod( 'twitter_hash', 'jawsug,jawsdays' );
 						?>
 
-					<li><a href="https://twitter.com/intent/tweet?text=<?php echo rawurlencode( get_bloginfo( 'name' ) ); ?>&url=<?php echo rawurlencode( home_url( '/' ) ); ?>&hashtags=<?php echo esc_attr( $twitter_hash ); ?>&via=<?php echo esc_attr( $twitter_via ); ?>" target="_blank">
-<i class="fa fa-twitter-square"></i></a></li>
+					<li><a href="https://twitter.com/intent/tweet?text=<?php echo rawurlencode( get_bloginfo( 'name' ) ); ?>&url=<?php echo rawurlencode( home_url( '/' ) ); ?>&hashtags=<?php echo esc_attr( $twitter_hash ); ?>&via=<?php echo esc_attr( $twitter_via ); ?>" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
 					<?php $appid = get_theme_mod( 'facebook_app_id', 1400003920114272 ); ?>
-					<li><a href="https://www.facebook.com/dialog/share?app_id=<?php echo $appid; ?>&href=<?php echo rawurlencode( home_url( '/' ) ); ?>" target="_blank"><i class="fa fa-facebook-official"></i></a></li>
+					<li><a href="https://www.facebook.com/dialog/share?app_id=<?php echo $appid; ?>&href=<?php echo rawurlencode( home_url( '/' ) ); ?>" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
 				</ul>
 			</div>
 			<p class="copyright">&copy; JAWS-UG（AWS Users Group – Japan. All rights reserved.</p>

@@ -158,13 +158,13 @@ function jawsugwp_scripts() {
 	/**
 	 * Font Awesome
 	 *
-	 * @link https://fortawesome.github.io/Font-Awesome/
+	 * @link https://fontawesome.com/
 	 */
-	wp_enqueue_style(
+	wp_enqueue_script(
 		'font-awesome',
-		'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css',
+		'https://use.fontawesome.com/releases/v5.0.2/js/all.js',
 		array(),
-		'4.7.0'
+		'v5.0.2'
 	);
 
 	/**
