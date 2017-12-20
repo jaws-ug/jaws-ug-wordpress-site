@@ -156,7 +156,7 @@ function jawsugwp_scripts() {
 	wp_enqueue_style( 'open-sans' );
 
 	/**
-	 * Font Awesome
+	 * FontAwesome
 	 *
 	 * @link https://fontawesome.com/
 	 */

@@ -7,9 +7,6 @@
 		margin: 0;
 		padding-left: 0;
 		background: $color__background-main-navigation;
-		@include mqPC {
-			background: transparent;
-		}
 
 		ul {
 			display: none;
@@ -58,8 +55,9 @@
 		}
 	}
 	li {
-		border-bottom: solid 1px white;
+		border-bottom: solid 1px $color__background-hr;
 		@include mqPC {
+			border-bottom: solid 1px $color__background-body;
 			position: relative;
 			float: left;
 			
@@ -70,6 +68,15 @@
 
 		&:hover > a,
 		&.focus > a {
+		}
+		li:first-of-type {
+			border-top: solid 1px $color__background-hr;
+			@include mqPC {
+				border-top: solid 1px $color__background-body;
+			}
+		}
+		li:last-of-type {
+			border-bottom: none;
 		}
 	}
 	a {
@@ -98,12 +105,14 @@
 }
 
 .menu-toggle {
-	width: 100%;
 	background-color: $color__background-menu-toggle;
 	border: none;
 	color: $color__text-menu-toggle;
 	border-radius: 0;
-	@include font-size(24);
+	@include font-size(20);
+	position: absolute;
+	top: 15px;
+	right: 0;
 }
 
 

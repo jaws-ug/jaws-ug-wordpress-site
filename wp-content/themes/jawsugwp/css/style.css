@@ -598,22 +598,16 @@ a:hover, a:active {
   list-style: none;
   margin: 0;
   padding-left: 0;
-  background: #fafafa;
+  background: #ffffff;
 }
-@media screen and (min-width: 601px) {
-  /* line 4, ../sass/navigation/_menus.scss */
-  .main-navigation ul {
-    background: transparent;
-  }
-}
-/* line 14, ../sass/navigation/_menus.scss */
+/* line 11, ../sass/navigation/_menus.scss */
 .main-navigation ul ul {
   display: none;
   background: #ffffff;
   padding-left: 1em;
 }
 @media screen and (min-width: 601px) {
-  /* line 14, ../sass/navigation/_menus.scss */
+  /* line 11, ../sass/navigation/_menus.scss */
   .main-navigation ul ul {
     float: left;
     position: absolute;
@@ -623,111 +617,128 @@ a:hover, a:active {
   }
 }
 @media screen and (min-width: 601px) {
-  /* line 26, ../sass/navigation/_menus.scss */
+  /* line 23, ../sass/navigation/_menus.scss */
   .main-navigation ul ul ul {
     top: 0;
     left: 200px;
   }
 }
-/* line 34, ../sass/navigation/_menus.scss */
+/* line 31, ../sass/navigation/_menus.scss */
 .main-navigation ul ul li:hover > ul, .main-navigation ul ul li.focus > ul {
   display: block;
 }
 @media screen and (min-width: 601px) {
-  /* line 40, ../sass/navigation/_menus.scss */
+  /* line 37, ../sass/navigation/_menus.scss */
   .main-navigation ul ul a {
     padding: 0.5em;
   }
 }
-/* line 55, ../sass/navigation/_menus.scss */
+/* line 52, ../sass/navigation/_menus.scss */
 .main-navigation ul li:hover > ul,
 .main-navigation ul li.focus > ul {
   display: block;
 }
-/* line 60, ../sass/navigation/_menus.scss */
+/* line 57, ../sass/navigation/_menus.scss */
 .main-navigation li {
-  border-bottom: solid 1px white;
+  border-bottom: solid 1px #ccc;
 }
 @media screen and (min-width: 601px) {
-  /* line 60, ../sass/navigation/_menus.scss */
+  /* line 57, ../sass/navigation/_menus.scss */
   .main-navigation li {
+    border-bottom: solid 1px #fff;
     position: relative;
     float: left;
   }
-  /* line 66, ../sass/navigation/_menus.scss */
+  /* line 64, ../sass/navigation/_menus.scss */
   .main-navigation li li {
     float: none;
   }
 }
-/* line 75, ../sass/navigation/_menus.scss */
+/* line 72, ../sass/navigation/_menus.scss */
+.main-navigation li li:first-of-type {
+  border-top: solid 1px #ccc;
+}
+@media screen and (min-width: 601px) {
+  /* line 72, ../sass/navigation/_menus.scss */
+  .main-navigation li li:first-of-type {
+    border-top: solid 1px #fff;
+  }
+}
+/* line 78, ../sass/navigation/_menus.scss */
+.main-navigation li li:last-of-type {
+  border-bottom: none;
+}
+/* line 82, ../sass/navigation/_menus.scss */
 .main-navigation a {
   display: block;
   text-decoration: none;
   padding: 1em;
 }
 @media screen and (min-width: 601px) {
-  /* line 75, ../sass/navigation/_menus.scss */
+  /* line 82, ../sass/navigation/_menus.scss */
   .main-navigation a {
     padding: 0 0.5em;
   }
 }
 
 /* Small menu. */
-/* line 92, ../sass/navigation/_menus.scss */
+/* line 99, ../sass/navigation/_menus.scss */
 .menu-toggle,
 .main-navigation.toggled ul {
   display: block;
 }
-/* line 95, ../sass/navigation/_menus.scss */
+/* line 102, ../sass/navigation/_menus.scss */
 .menu-toggle ul,
 .main-navigation.toggled ul ul {
   display: none;
 }
 
-/* line 100, ../sass/navigation/_menus.scss */
+/* line 107, ../sass/navigation/_menus.scss */
 .menu-toggle {
-  width: 100%;
   background-color: #363636;
   border: none;
   color: #ffffff;
   border-radius: 0;
-  font-size: 24px;
-  font-size: 1.5rem;
+  font-size: 20px;
+  font-size: 1.25rem;
+  position: absolute;
+  top: 15px;
+  right: 0;
 }
 
 @media screen and (min-width: 601px) {
-  /* line 111, ../sass/navigation/_menus.scss */
+  /* line 120, ../sass/navigation/_menus.scss */
   .menu-toggle {
     display: none;
   }
 
-  /* line 114, ../sass/navigation/_menus.scss */
+  /* line 123, ../sass/navigation/_menus.scss */
   .main-navigation ul {
     display: block;
   }
 }
-/* line 119, ../sass/navigation/_menus.scss */
+/* line 128, ../sass/navigation/_menus.scss */
 .footer-navigation {
   font-size: 14px;
   font-size: 0.875rem;
   display: block;
 }
-/* line 123, ../sass/navigation/_menus.scss */
+/* line 132, ../sass/navigation/_menus.scss */
 .footer-navigation ul {
   list-style: none;
   margin: 0;
   padding-left: 0;
 }
-/* line 128, ../sass/navigation/_menus.scss */
+/* line 137, ../sass/navigation/_menus.scss */
 .footer-navigation ul ul {
   padding-left: 1em;
 }
-/* line 150, ../sass/navigation/_menus.scss */
+/* line 159, ../sass/navigation/_menus.scss */
 .footer-navigation li {
   border-bottom: solid 1px #666;
 }
 @media screen and (min-width: 601px) {
-  /* line 150, ../sass/navigation/_menus.scss */
+  /* line 159, ../sass/navigation/_menus.scss */
   .footer-navigation li {
     border-bottom: none;
     display: inline-block;
@@ -735,33 +746,33 @@ a:hover, a:active {
     margin-right: 1em;
   }
 }
-/* line 158, ../sass/navigation/_menus.scss */
+/* line 167, ../sass/navigation/_menus.scss */
 .footer-navigation li li {
   display: block;
   border-bottom: none;
 }
-/* line 166, ../sass/navigation/_menus.scss */
+/* line 175, ../sass/navigation/_menus.scss */
 .footer-navigation a {
   text-decoration: none;
   display: block;
   padding: 0.5em;
 }
 
-/* line 183, ../sass/navigation/_menus.scss */
+/* line 192, ../sass/navigation/_menus.scss */
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
 .post-navigation {
   margin: 0 0 1.5em;
   overflow: hidden;
 }
-/* line 188, ../sass/navigation/_menus.scss */
+/* line 197, ../sass/navigation/_menus.scss */
 .comment-navigation .nav-previous,
 .posts-navigation .nav-previous,
 .post-navigation .nav-previous {
   float: left;
   width: 50%;
 }
-/* line 193, ../sass/navigation/_menus.scss */
+/* line 202, ../sass/navigation/_menus.scss */
 .comment-navigation .nav-next,
 .posts-navigation .nav-next,
 .post-navigation .nav-next {
@@ -770,7 +781,7 @@ a:hover, a:active {
   width: 50%;
 }
 
-/* line 200, ../sass/navigation/_menus.scss */
+/* line 209, ../sass/navigation/_menus.scss */
 .pagination .nav-links,
 .page-links {
   width: 100%;
@@ -778,7 +789,7 @@ a:hover, a:active {
   margin: 15px 0;
   clear: both;
 }
-/* line 207, ../sass/navigation/_menus.scss */
+/* line 216, ../sass/navigation/_menus.scss */
 .pagination .nav-links a,
 .page-links a {
   width: 40px;
@@ -794,7 +805,7 @@ a:hover, a:active {
   margin: 0px 3px;
 }
 @media screen and (min-width: 601px) {
-  /* line 207, ../sass/navigation/_menus.scss */
+  /* line 216, ../sass/navigation/_menus.scss */
   .pagination .nav-links a,
   .page-links a {
     width: 50px;
@@ -805,14 +816,14 @@ a:hover, a:active {
     border-radius: 25px;
   }
 }
-/* line 223, ../sass/navigation/_menus.scss */
+/* line 232, ../sass/navigation/_menus.scss */
 .pagination .nav-links a:hover,
 .page-links a:hover {
   text-decoration: none;
   color: #ffffff;
   background: #231f20;
 }
-/* line 229, ../sass/navigation/_menus.scss */
+/* line 238, ../sass/navigation/_menus.scss */
 .pagination .nav-links > span,
 .page-links > span {
   width: 40px;
@@ -828,7 +839,7 @@ a:hover, a:active {
   margin: 0px 3px;
 }
 @media screen and (min-width: 601px) {
-  /* line 229, ../sass/navigation/_menus.scss */
+  /* line 238, ../sass/navigation/_menus.scss */
   .pagination .nav-links > span,
   .page-links > span {
     width: 50px;
@@ -839,7 +850,7 @@ a:hover, a:active {
     border-radius: 25px;
   }
 }
-/* line 245, ../sass/navigation/_menus.scss */
+/* line 254, ../sass/navigation/_menus.scss */
 .pagination .nav-links > span.dots,
 .page-links > span.dots {
   color: #231f20;
@@ -1070,6 +1081,8 @@ body.home .main-image img {
 /* line 1, ../sass/site/_header.scss */
 .site-header {
   padding-top: 20px;
+  padding-bottom: 20px;
+  position: relative;
 }
 @media screen and (min-width: 601px) {
   /* line 1, ../sass/site/_header.scss */
@@ -1085,31 +1098,25 @@ body.home .main-image img {
   }
 }
 
-/* line 16, ../sass/site/_header.scss */
+/* line 18, ../sass/site/_header.scss */
 .site-title {
-  margin: 0 auto;
-  text-align: center;
+  margin: 0;
   line-height: 1;
   width: 190px;
 }
-/* line 21, ../sass/site/_header.scss */
+/* line 22, ../sass/site/_header.scss */
 .site-title a {
   display: inline-block;
 }
 
-/* line 25, ../sass/site/_header.scss */
-.main-navigation {
-  margin-top: 20px;
-  margin-right: -15px;
-  margin-left: -15px;
-}
 @media screen and (min-width: 601px) {
-  /* line 25, ../sass/site/_header.scss */
+  /* line 26, ../sass/site/_header.scss */
   .main-navigation {
     margin: 0 0 0 20px;
     width: 100%;
+    position: relative;
   }
-  /* line 32, ../sass/site/_header.scss */
+  /* line 34, ../sass/site/_header.scss */
   .main-navigation .menu {
     float: right;
   }
