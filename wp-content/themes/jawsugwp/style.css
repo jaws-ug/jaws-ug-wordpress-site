@@ -407,7 +407,7 @@ img {
 
 table {
   margin: 0 0 1.5em;
-  width: 100%;
+  max-width: 100%;
 }
 
 /*--------------------------------------------------------------
@@ -1695,38 +1695,56 @@ p.copyright {
 .mceContentBody table th {
   background: #eeeeee;
 }
+.page-content .scroll,
+.entry-content .scroll,
+.entry-summary .scroll,
+.mceContentBody .scroll {
+  overflow: auto;
+  white-space: nowrap;
+  margin-bottom: 1.5em;
+}
+.page-content .scroll::-webkit-scrollbar,
+.entry-content .scroll::-webkit-scrollbar,
+.entry-summary .scroll::-webkit-scrollbar,
+.mceContentBody .scroll::-webkit-scrollbar {
+  height: 5px;
+}
+.page-content .scroll::-webkit-scrollbar-track,
+.entry-content .scroll::-webkit-scrollbar-track,
+.entry-summary .scroll::-webkit-scrollbar-track,
+.mceContentBody .scroll::-webkit-scrollbar-track {
+  background: #F1F1F1;
+}
+.page-content .scroll::-webkit-scrollbar-thumb,
+.entry-content .scroll::-webkit-scrollbar-thumb,
+.entry-summary .scroll::-webkit-scrollbar-thumb,
+.mceContentBody .scroll::-webkit-scrollbar-thumb {
+  background: #BCBCBC;
+}
 .page-content table.timetable,
 .entry-content table.timetable,
 .entry-summary table.timetable,
 .mceContentBody table.timetable {
   background: white;
-  font-size: 14px;
-  font-size: 0.875rem;
-}
-@media screen and (min-width: 601px) {
-  .page-content table.timetable,
-  .entry-content table.timetable,
-  .entry-summary table.timetable,
-  .mceContentBody table.timetable {
-    font-size: 12px;
-    font-size: 0.75rem;
-    width: 100%;
-    table-layout: fixed;
-  }
+  font-size: 12px;
+  font-size: 0.75rem;
+  width: 100%;
+  min-width: 800px;
+  table-layout: fixed;
+  margin: 0;
 }
 .page-content table.timetable .time,
 .entry-content table.timetable .time,
 .entry-summary table.timetable .time,
 .mceContentBody table.timetable .time {
   white-space: nowrap;
+  width: 4em;
 }
-@media screen and (min-width: 601px) {
-  .page-content table.timetable .time,
-  .entry-content table.timetable .time,
-  .entry-summary table.timetable .time,
-  .mceContentBody table.timetable .time {
-    width: 4em;
-  }
+.page-content table.timetable .track,
+.entry-content table.timetable .track,
+.entry-summary table.timetable .track,
+.mceContentBody table.timetable .track {
+  white-space: nowrap;
 }
 .page-content table.timetable thead th,
 .entry-content table.timetable thead th,
@@ -1774,30 +1792,6 @@ p.copyright {
 .mceContentBody table.timetable th > p::last-child,
 .mceContentBody table.timetable td > p::last-child {
   margin-bottom: 0;
-}
-.page-content table.timetable .footable-row-detail-inner,
-.entry-content table.timetable .footable-row-detail-inner,
-.entry-summary table.timetable .footable-row-detail-inner,
-.mceContentBody table.timetable .footable-row-detail-inner {
-  width: 100%;
-}
-.page-content table.timetable .footable-row-detail-row,
-.entry-content table.timetable .footable-row-detail-row,
-.entry-summary table.timetable .footable-row-detail-row,
-.mceContentBody table.timetable .footable-row-detail-row {
-  border-bottom: solid 1px #ccc;
-}
-.page-content table.timetable .footable-row-detail-row:last-child,
-.entry-content table.timetable .footable-row-detail-row:last-child,
-.entry-summary table.timetable .footable-row-detail-row:last-child,
-.mceContentBody table.timetable .footable-row-detail-row:last-child {
-  border-bottom: none;
-}
-.page-content table.timetable .footable-row-detail-name,
-.entry-content table.timetable .footable-row-detail-name,
-.entry-summary table.timetable .footable-row-detail-name,
-.mceContentBody table.timetable .footable-row-detail-name {
-  width: 5.9em;
 }
 
 /*--------------------------------------------------------------

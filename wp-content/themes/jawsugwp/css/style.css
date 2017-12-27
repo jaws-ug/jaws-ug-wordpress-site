@@ -474,7 +474,7 @@ img {
 /* line 1, ../sass/elements/_tables.scss */
 table {
   margin: 0 0 1.5em;
-  width: 100%;
+  max-width: 100%;
 }
 
 /*--------------------------------------------------------------
@@ -1967,43 +1967,64 @@ p.copyright {
   background: #eeeeee;
 }
 /* line 67, ../sass/site/primary/_entry-content.scss */
+.page-content .scroll,
+.entry-content .scroll,
+.entry-summary .scroll,
+.mceContentBody .scroll {
+  overflow: auto;
+  white-space: nowrap;
+  margin-bottom: 1.5em;
+}
+/* line 72, ../sass/site/primary/_entry-content.scss */
+.page-content .scroll::-webkit-scrollbar,
+.entry-content .scroll::-webkit-scrollbar,
+.entry-summary .scroll::-webkit-scrollbar,
+.mceContentBody .scroll::-webkit-scrollbar {
+  height: 5px;
+}
+/* line 75, ../sass/site/primary/_entry-content.scss */
+.page-content .scroll::-webkit-scrollbar-track,
+.entry-content .scroll::-webkit-scrollbar-track,
+.entry-summary .scroll::-webkit-scrollbar-track,
+.mceContentBody .scroll::-webkit-scrollbar-track {
+  background: #F1F1F1;
+}
+/* line 78, ../sass/site/primary/_entry-content.scss */
+.page-content .scroll::-webkit-scrollbar-thumb,
+.entry-content .scroll::-webkit-scrollbar-thumb,
+.entry-summary .scroll::-webkit-scrollbar-thumb,
+.mceContentBody .scroll::-webkit-scrollbar-thumb {
+  background: #BCBCBC;
+}
+/* line 81, ../sass/site/primary/_entry-content.scss */
 .page-content table.timetable,
 .entry-content table.timetable,
 .entry-summary table.timetable,
 .mceContentBody table.timetable {
   background: white;
-  font-size: 14px;
-  font-size: 0.875rem;
+  font-size: 12px;
+  font-size: 0.75rem;
+  width: 100%;
+  min-width: 800px;
+  table-layout: fixed;
+  margin: 0;
 }
-@media screen and (min-width: 601px) {
-  /* line 67, ../sass/site/primary/_entry-content.scss */
-  .page-content table.timetable,
-  .entry-content table.timetable,
-  .entry-summary table.timetable,
-  .mceContentBody table.timetable {
-    font-size: 12px;
-    font-size: 0.75rem;
-    width: 100%;
-    table-layout: fixed;
-  }
-}
-/* line 75, ../sass/site/primary/_entry-content.scss */
+/* line 88, ../sass/site/primary/_entry-content.scss */
 .page-content table.timetable .time,
 .entry-content table.timetable .time,
 .entry-summary table.timetable .time,
 .mceContentBody table.timetable .time {
   white-space: nowrap;
+  width: 4em;
 }
-@media screen and (min-width: 601px) {
-  /* line 75, ../sass/site/primary/_entry-content.scss */
-  .page-content table.timetable .time,
-  .entry-content table.timetable .time,
-  .entry-summary table.timetable .time,
-  .mceContentBody table.timetable .time {
-    width: 4em;
-  }
+/* line 92, ../sass/site/primary/_entry-content.scss */
+.page-content table.timetable .track,
+.entry-content table.timetable .track,
+.entry-summary table.timetable .track,
+.mceContentBody table.timetable .track {
+  white-space: nowrap;
 }
-/* line 81, ../sass/site/primary/_entry-content.scss */
+/* line 95, ../sass/site/primary/_entry-content.scss */
 .page-content table.timetable thead th,
 .entry-content table.timetable thead th,
 .entry-summary table.timetable thead th,
@@ -2011,7 +2032,7 @@ p.copyright {
   background: #424346;
   color: white;
 }
-/* line 84, ../sass/site/primary/_entry-content.scss */
+/* line 98, ../sass/site/primary/_entry-content.scss */
 .page-content table.timetable thead th a,
 .entry-content table.timetable thead th a,
 .entry-summary table.timetable thead th a,
@@ -2019,7 +2040,7 @@ p.copyright {
   color: #ff9c08;
   text-decoration: underline;
 }
-/* line 89, ../sass/site/primary/_entry-content.scss */
+/* line 103, ../sass/site/primary/_entry-content.scss */
 .page-content table.timetable td.time,
 .entry-content table.timetable td.time,
 .entry-summary table.timetable td.time,
@@ -2027,14 +2048,14 @@ p.copyright {
   background: #eeeeee;
   text-align: center;
 }
-/* line 93, ../sass/site/primary/_entry-content.scss */
+/* line 107, ../sass/site/primary/_entry-content.scss */
 .page-content table.timetable .long-cell td,
 .entry-content table.timetable .long-cell td,
 .entry-summary table.timetable .long-cell td,
 .mceContentBody table.timetable .long-cell td {
   text-align: center;
 }
-/* line 96, ../sass/site/primary/_entry-content.scss */
+/* line 110, ../sass/site/primary/_entry-content.scss */
 .page-content table.timetable th > p,
 .page-content table.timetable td > p,
 .entry-content table.timetable th > p,
@@ -2045,7 +2066,7 @@ p.copyright {
 .mceContentBody table.timetable td > p {
   margin-bottom: 0.5em;
 }
-/* line 99, ../sass/site/primary/_entry-content.scss */
+/* line 113, ../sass/site/primary/_entry-content.scss */
 .page-content table.timetable th > p::last-child,
 .page-content table.timetable td > p::last-child,
 .entry-content table.timetable th > p::last-child,
@@ -2055,34 +2076,6 @@ p.copyright {
 .mceContentBody table.timetable th > p::last-child,
 .mceContentBody table.timetable td > p::last-child {
   margin-bottom: 0;
-}
-/* line 104, ../sass/site/primary/_entry-content.scss */
-.page-content table.timetable .footable-row-detail-inner,
-.entry-content table.timetable .footable-row-detail-inner,
-.entry-summary table.timetable .footable-row-detail-inner,
-.mceContentBody table.timetable .footable-row-detail-inner {
-  width: 100%;
-}
-/* line 107, ../sass/site/primary/_entry-content.scss */
-.page-content table.timetable .footable-row-detail-row,
-.entry-content table.timetable .footable-row-detail-row,
-.entry-summary table.timetable .footable-row-detail-row,
-.mceContentBody table.timetable .footable-row-detail-row {
-  border-bottom: solid 1px #ccc;
-}
-/* line 109, ../sass/site/primary/_entry-content.scss */
-.page-content table.timetable .footable-row-detail-row:last-child,
-.entry-content table.timetable .footable-row-detail-row:last-child,
-.entry-summary table.timetable .footable-row-detail-row:last-child,
-.mceContentBody table.timetable .footable-row-detail-row:last-child {
-  border-bottom: none;
-}
-/* line 113, ../sass/site/primary/_entry-content.scss */
-.page-content table.timetable .footable-row-detail-name,
-.entry-content table.timetable .footable-row-detail-name,
-.entry-summary table.timetable .footable-row-detail-name,
-.mceContentBody table.timetable .footable-row-detail-name {
-  width: 5.9em;
 }
 
 /*--------------------------------------------------------------
