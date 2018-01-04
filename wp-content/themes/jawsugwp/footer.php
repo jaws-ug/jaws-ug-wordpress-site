@@ -103,7 +103,7 @@
 					<li><a href="https://www.facebook.com/dialog/share?app_id=<?php echo $appid; ?>&href=<?php echo rawurlencode( home_url( '/' ) ); ?>" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
 				</ul>
 			</div>
-			<p class="copyright">&copy; JAWS-UG（AWS Users Group – Japan. All rights reserved.</p>
+			<p class="copyright">&copy; <a href="https://jaws-ug.jp/" target="_blank">JAWS-UG (AWS Users Group – Japan)</a>. All rights reserved.</p>
 		</div><!-- .site-info -->
 		<?php do_action( 'jawsugwp_after_footer' ); ?>
 	</div></footer><!-- #colophon -->
