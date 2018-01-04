@@ -2008,8 +2008,9 @@ p.copyright {
   min-width: 800px;
   table-layout: fixed;
   margin: 0;
+  white-space: normal;
 }
-/* line 88, ../sass/site/primary/_entry-content.scss */
+/* line 89, ../sass/site/primary/_entry-content.scss */
 .page-content table.timetable .time,
 .entry-content table.timetable .time,
 .entry-summary table.timetable .time,
@@ -2017,14 +2018,14 @@ p.copyright {
   white-space: nowrap;
   width: 4em;
 }
-/* line 92, ../sass/site/primary/_entry-content.scss */
+/* line 93, ../sass/site/primary/_entry-content.scss */
 .page-content table.timetable .track,
 .entry-content table.timetable .track,
 .entry-summary table.timetable .track,
 .mceContentBody table.timetable .track {
   white-space: nowrap;
 }
-/* line 95, ../sass/site/primary/_entry-content.scss */
+/* line 96, ../sass/site/primary/_entry-content.scss */
 .page-content table.timetable thead th,
 .entry-content table.timetable thead th,
 .entry-summary table.timetable thead th,
@@ -2032,7 +2033,7 @@ p.copyright {
   background: #424346;
   color: white;
 }
-/* line 98, ../sass/site/primary/_entry-content.scss */
+/* line 99, ../sass/site/primary/_entry-content.scss */
 .page-content table.timetable thead th a,
 .entry-content table.timetable thead th a,
 .entry-summary table.timetable thead th a,
@@ -2040,7 +2041,7 @@ p.copyright {
   color: #ff9c08;
   text-decoration: underline;
 }
-/* line 103, ../sass/site/primary/_entry-content.scss */
+/* line 104, ../sass/site/primary/_entry-content.scss */
 .page-content table.timetable td.time,
 .entry-content table.timetable td.time,
 .entry-summary table.timetable td.time,
@@ -2048,14 +2049,14 @@ p.copyright {
   background: #eeeeee;
   text-align: center;
 }
-/* line 107, ../sass/site/primary/_entry-content.scss */
+/* line 108, ../sass/site/primary/_entry-content.scss */
 .page-content table.timetable .long-cell td,
 .entry-content table.timetable .long-cell td,
 .entry-summary table.timetable .long-cell td,
 .mceContentBody table.timetable .long-cell td {
   text-align: center;
 }
-/* line 110, ../sass/site/primary/_entry-content.scss */
+/* line 111, ../sass/site/primary/_entry-content.scss */
 .page-content table.timetable th > p,
 .page-content table.timetable td > p,
 .entry-content table.timetable th > p,
@@ -2066,7 +2067,7 @@ p.copyright {
 .mceContentBody table.timetable td > p {
   margin-bottom: 0.5em;
 }
-/* line 113, ../sass/site/primary/_entry-content.scss */
+/* line 114, ../sass/site/primary/_entry-content.scss */
 .page-content table.timetable th > p::last-child,
 .page-content table.timetable td > p::last-child,
 .entry-content table.timetable th > p::last-child,

@@ -1732,6 +1732,7 @@ p.copyright {
   min-width: 800px;
   table-layout: fixed;
   margin: 0;
+  white-space: normal;
 }
 .page-content table.timetable .time,
 .entry-content table.timetable .time,

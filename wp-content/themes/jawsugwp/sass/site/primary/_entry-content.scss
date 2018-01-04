@@ -64,7 +64,7 @@
 	}
 	
 	// time table
-	.scroll{
+	.scroll {
 		overflow: auto;
 		white-space: nowrap;
 		margin-bottom: 1.5em;
@@ -85,6 +85,7 @@
 		min-width: 800px;
 		table-layout: fixed;
 		margin: 0;
+		white-space: normal;
 		.time {
 			white-space: nowrap;
 			width: 4em;
