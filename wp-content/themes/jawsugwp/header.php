@@ -21,6 +21,7 @@
 
 <body <?php body_class(); ?>>
 <?php do_action( 'jawsugwp_before_body' ); ?>
+       
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'jawsugwp' ); ?></a>
 
@@ -41,6 +42,13 @@
 			<?php wp_nav_menu( array( 'theme_location' => 'main_menu', 'menu_id' => 'primary-menu' ) ); ?>
 		</nav><!-- #site-navigation -->
 
+		<div id="google_translate_element" style="float: right;"></div>
+		<script type="text/javascript">
+		function googleTranslateElementInit() {
+		  new google.translate.TranslateElement({pageLanguage: 'ja', gaTrack: true, gaId: 'UA-57886388-5'}, 'google_translate_element');
+		}
+		</script>
+		<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 		<?php do_action( 'jawsugwp_after_header' ); ?>
 	</header><!-- #masthead -->
 
