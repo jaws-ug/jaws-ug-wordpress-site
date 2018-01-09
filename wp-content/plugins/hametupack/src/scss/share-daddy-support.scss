@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+
+@font-face {
+  font-family: 'social-jp';
+  src:url('../fonts/social-jp.eot?-qz7pb2');
+  src:url('../fonts/social-jp.eot?#iefix-qz7pb2') format('embedded-opentype'),
+  url('../fonts/social-jp.woff?-qz7pb2') format('woff'),
+  url('../fonts/social-jp.ttf?-qz7pb2') format('truetype'),
+  url('../fonts/social-jp.svg?-qz7pb2#socialjp') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+%social-jp {
+  font-family: 'social-jp';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// share-hatebu sd-button share-icon
+// share-twitter sd-button share-icon no-text
+
+@each $var in (
+  feedly "\e007" #2bb24c,
+  line   "\e009" #00c300,
+  hatebu "\e00a" #008fde,
+){
+  $brand: nth($var, 1);
+  $content: nth($var, 2);
+  $color: nth($var, 3);
+  .share-#{$brand}.sd-button.share-icon,
+  #enabled-services .share-#{$brand} span{
+    &:before{
+      @extend %social-jp;
+      content: $content;
+    }
+    &.no-text{
+      color: #fff !important;
+      background-color: $color !important;
+    }
+  }
+  #live-preview .preview-item.share-#{$brand} a.no-text:before{
+    color: #fff !important;
+  }
+  .sd-sharing-enabled .option-smart-on .share-#{$brand} span{
+    display: inline-block;
+    padding: 2px 10px;
+    color: #fff !important;
+    background: $color !important;
+    &:after{
+      content: " Example";
+      vertical-align: top;
+    }
+  }
+}
