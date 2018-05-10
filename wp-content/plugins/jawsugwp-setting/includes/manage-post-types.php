@@ -8,26 +8,26 @@
 // Register Custom Post Type - Session
 function custom_post_type_session() {
 	$tax_labels = array(
-		'name'                       => _x( 'Tracks', 'Taxonomy General Name', 'jawsugwp' ),
-		'singular_name'              => _x( 'Track', 'Taxonomy Singular Name', 'jawsugwp' ),
-		'menu_name'                  => __( 'Track', 'jawsugwp' ),
-		'all_items'                  => __( 'All Tracks', 'jawsugwp' ),
-		'parent_item'                => __( 'Parent Track', 'jawsugwp' ),
-		'parent_item_colon'          => __( 'Parent Track:', 'jawsugwp' ),
-		'new_item_name'              => __( 'New Track Name', 'jawsugwp' ),
-		'add_new_item'               => __( 'Add New Track', 'jawsugwp' ),
-		'edit_item'                  => __( 'Edit Track', 'jawsugwp' ),
-		'update_item'                => __( 'Update Track', 'jawsugwp' ),
-		'view_item'                  => __( 'View Track', 'jawsugwp' ),
-		'separate_items_with_commas' => __( 'Separate tracks with commas', 'jawsugwp' ),
-		'add_or_remove_items'        => __( 'Add or remove tracks', 'jawsugwp' ),
+		'name'                       => _x( 'セッション', 'Taxonomy General Name', 'jawsugwp' ),
+		'singular_name'              => _x( 'セッション', 'Taxonomy Singular Name', 'jawsugwp' ),
+		'menu_name'                  => __( 'セッション', 'jawsugwp' ),
+		'all_items'                  => __( 'All セッション', 'jawsugwp' ),
+		'parent_item'                => __( 'Parent セッション', 'jawsugwp' ),
+		'parent_item_colon'          => __( 'Parent セッション:', 'jawsugwp' ),
+		'new_item_name'              => __( 'New セッション Name', 'jawsugwp' ),
+		'add_new_item'               => __( 'Add New セッション', 'jawsugwp' ),
+		'edit_item'                  => __( 'Edit セッション', 'jawsugwp' ),
+		'update_item'                => __( 'Update セッション', 'jawsugwp' ),
+		'view_item'                  => __( 'View セッション', 'jawsugwp' ),
+		'separate_items_with_commas' => __( 'Separate セッション with commas', 'jawsugwp' ),
+		'add_or_remove_items'        => __( 'Add or remove セッション', 'jawsugwp' ),
 		'choose_from_most_used'      => __( 'Choose from the most used', 'jawsugwp' ),
-		'popular_items'              => __( 'Popular Tracks', 'jawsugwp' ),
-		'search_items'               => __( 'Search Tracks', 'jawsugwp' ),
+		'popular_items'              => __( 'Popular セッション', 'jawsugwp' ),
+		'search_items'               => __( 'Search セッション', 'jawsugwp' ),
 		'not_found'                  => __( 'Not Found', 'jawsugwp' ),
-		'no_terms'                   => __( 'No tracks', 'jawsugwp' ),
-		'items_list'                 => __( 'Tracks list', 'jawsugwp' ),
-		'items_list_navigation'      => __( 'Tracks list navigation', 'jawsugwp' ),
+		'no_terms'                   => __( 'No セッション', 'jawsugwp' ),
+		'items_list'                 => __( 'セッション list', 'jawsugwp' ),
+		'items_list_navigation'      => __( 'セッション list navigation', 'jawsugwp' ),
 	);
 	$tax_args = array(
 		'labels'                     => $tax_labels,
@@ -42,26 +42,26 @@ function custom_post_type_session() {
 	register_taxonomy( 'session_track', array( 'session' ), $tax_args );
 
 	$tax_labels = array(
-		'name'                       => _x( 'Venues', 'Taxonomy General Name', 'jawsugwp' ),
-		'singular_name'              => _x( 'Venue', 'Taxonomy Singular Name', 'jawsugwp' ),
-		'menu_name'                  => __( 'Venue', 'jawsugwp' ),
-		'all_items'                  => __( 'All Venues', 'jawsugwp' ),
-		'parent_item'                => __( 'Parent Venue', 'jawsugwp' ),
-		'parent_item_colon'          => __( 'Parent Venue:', 'jawsugwp' ),
-		'new_item_name'              => __( 'New Venue Name', 'jawsugwp' ),
-		'add_new_item'               => __( 'Add New Venue', 'jawsugwp' ),
-		'edit_item'                  => __( 'Edit Venue', 'jawsugwp' ),
-		'update_item'                => __( 'Update Venue', 'jawsugwp' ),
-		'view_item'                  => __( 'View Venue', 'jawsugwp' ),
-		'separate_items_with_commas' => __( 'Separate venues with commas', 'jawsugwp' ),
-		'add_or_remove_items'        => __( 'Add or remove venues', 'jawsugwp' ),
+		'name'                       => _x( 'トラック', 'Taxonomy General Name', 'jawsugwp' ),
+		'singular_name'              => _x( 'トラック', 'Taxonomy Singular Name', 'jawsugwp' ),
+		'menu_name'                  => __( 'トラック', 'jawsugwp' ),
+		'all_items'                  => __( 'All トラック', 'jawsugwp' ),
+		'parent_item'                => __( 'Parent トラック', 'jawsugwp' ),
+		'parent_item_colon'          => __( 'Parent トラック:', 'jawsugwp' ),
+		'new_item_name'              => __( 'New トラック Name', 'jawsugwp' ),
+		'add_new_item'               => __( 'Add New トラック', 'jawsugwp' ),
+		'edit_item'                  => __( 'Edit トラック', 'jawsugwp' ),
+		'update_item'                => __( 'Update トラック', 'jawsugwp' ),
+		'view_item'                  => __( 'View トラック', 'jawsugwp' ),
+		'separate_items_with_commas' => __( 'Separate トラック with commas', 'jawsugwp' ),
+		'add_or_remove_items'        => __( 'Add or remove トラック', 'jawsugwp' ),
 		'choose_from_most_used'      => __( 'Choose from the most used', 'jawsugwp' ),
-		'popular_items'              => __( 'Popular Venues', 'jawsugwp' ),
-		'search_items'               => __( 'Search Venues', 'jawsugwp' ),
+		'popular_items'              => __( 'Popular トラック', 'jawsugwp' ),
+		'search_items'               => __( 'Search トラック', 'jawsugwp' ),
 		'not_found'                  => __( 'Not Found', 'jawsugwp' ),
-		'no_terms'                   => __( 'No venues', 'jawsugwp' ),
-		'items_list'                 => __( 'Venues list', 'jawsugwp' ),
-		'items_list_navigation'      => __( 'Venues list navigation', 'jawsugwp' ),
+		'no_terms'                   => __( 'No トラック', 'jawsugwp' ),
+		'items_list'                 => __( 'トラック list', 'jawsugwp' ),
+		'items_list_navigation'      => __( 'トラック list navigation', 'jawsugwp' ),
 	);
 	$tax_args = array(
 		'labels'                     => $tax_labels,
@@ -225,6 +225,83 @@ function custom_post_type_supporter() {
 }
 add_action( 'init', 'custom_post_type_supporter', 0 );
 
+// Register Custom Post Type - overseasguest
+// Add 2018/01/26 HisakoIsaka
+function custom_post_type_overseasguest() {
+
+	$tax_labels = array(
+		'name'                       => _x( '海外ゲスト', 'Taxonomy General Name', 'jawsugwp' ),
+		'singular_name'              => _x( '海外ゲスト', 'Taxonomy Singular Name', 'jawsugwp' ),
+		'menu_name'                  => __( '海外ゲスト', 'jawsugwp' ),
+		'all_items'                  => __( 'All Types', 'jawsugwp' ),
+		'parent_item'                => __( 'Parent Type', 'jawsugwp' ),
+		'parent_item_colon'          => __( 'Parent Type:', 'jawsugwp' ),
+		'new_item_name'              => __( 'New Type Name', 'jawsugwp' ),
+		'add_new_item'               => __( 'Add New Type', 'jawsugwp' ),
+		'edit_item'                  => __( 'Edit Type', 'jawsugwp' ),
+		'update_item'                => __( 'Update Type', 'jawsugwp' ),
+		'view_item'                  => __( 'View Type', 'jawsugwp' ),
+		'separate_items_with_commas' => __( 'Separate types with commas', 'jawsugwp' ),
+		'add_or_remove_items'        => __( 'Add or remove types', 'jawsugwp' ),
+		'choose_from_most_used'      => __( 'Choose from the most used', 'jawsugwp' ),
+		'popular_items'              => __( 'Popular Types', 'jawsugwp' ),
+		'search_items'               => __( 'Search Types', 'jawsugwp' ),
+		'not_found'                  => __( 'Not Found', 'jawsugwp' ),
+		'no_terms'                   => __( 'No types', 'jawsugwp' ),
+		'items_list'                 => __( 'Types list', 'jawsugwp' ),
+		'items_list_navigation'      => __( 'Types list navigation', 'jawsugwp' ),
+	);
+	$tax_args = array(
+		'labels'                     => $tax_labels,
+		'hierarchical'               => true,
+		'public'                     => false,
+		'show_ui'                    => true,
+		'show_admin_column'          => true,
+		'show_in_nav_menus'          => false,
+		'show_tagcloud'              => false,
+	);
+	register_taxonomy( 'overseasguest_type', array( 'overseasguest' ), $tax_args );
+
+	$labels = array(
+		'name'                => _x( '海外ゲスト', 'Post Type General Name', 'jawsugwp' ),
+		'singular_name'       => _x( '海外ゲスト', 'Post Type Singular Name', 'jawsugwp' ),
+		'menu_name'           => _x( '海外ゲスト', 'Post Type Menu Name', 'jawsugwp' ),
+		'parent_item_colon'   => __( 'Parent Item:', 'jawsugwp' ),
+		'all_items'           => __( 'All Items', 'jawsugwp' ),
+		'view_item'           => __( 'View Item', 'jawsugwp' ),
+		'add_new_item'        => __( 'Add New Item', 'jawsugwp' ),
+		'add_new'             => __( 'Add New', 'jawsugwp' ),
+		'edit_item'           => __( 'Edit Item', 'jawsugwp' ),
+		'update_item'         => __( 'Update Item', 'jawsugwp' ),
+		'search_items'        => __( 'Search Item', 'jawsugwp' ),
+		'not_found'           => __( 'Not found', 'jawsugwp' ),
+		'not_found_in_trash'  => __( 'Not found in Trash', 'jawsugwp' ),
+	);
+	$args = array(
+		'label'               => _x( 'overseasguests', 'Post Type label', 'jawsugwp' ),
+		'description'         => _x( 'overseasguest', 'Post Type description', 'jawsugwp' ),
+		'labels'              => $labels,
+		'supports'            => array( 'title', 'editor', 'excerpt', 'thumbnail', 'revisions', 'publicize', 'wpcom-markdown' ),
+		'hierarchical'        => false,
+		'public'              => true,
+		'show_ui'             => true,
+		'show_in_menu'        => true,
+		'show_in_nav_menus'   => true,
+		'show_in_admin_bar'   => true,
+		'menu_position'       => 20,
+		'menu_icon'           => 'dashicons-awards',
+		'can_export'          => true,
+		'has_archive'         => true,
+		'exclude_from_search' => false,
+		'publicly_queryable'  => true,
+		'capability_type'     => 'post',
+		'rewrite'             => array( 'slug' => 'overseasguest', 'with_front' => false ),
+		'sptp_permalink_structure' => 'overseasguest/%post_id%',
+	);
+	register_post_type( 'overseasguest', $args );
+}
+add_action( 'init', 'custom_post_type_overseasguest', 0 );
+
 // Term sort for Custom Post Type
 function jaws_restrict_manage_posts( $post_type ) {
 	if ( 'supporter' == $post_type ) {
@@ -254,6 +331,16 @@ function jaws_restrict_manage_posts( $post_type ) {
 			'selected'           => $venue_var,
 			'name'               => 'session_venue',
 			'taxonomy'           => 'session_venue',
+			'value_field'	     => 'slug',	
+		));
+	} elseif ( 'overseasguest' == $post_type ) { // Add 2018/01/26 HisakoIsaka
+		$term_slug = get_query_var( 'overseasguest_type' );
+		wp_dropdown_categories( array(
+			'show_option_all'    => __( 'All Types', 'jawsugwp' ),
+			'hide_empty'         => 0,
+			'selected'           => $term_slug,
+			'name'               => 'overseasguest_type',
+			'taxonomy'           => 'overseasguest_type',
 			'value_field'	     => 'slug',	
 		));
 	}

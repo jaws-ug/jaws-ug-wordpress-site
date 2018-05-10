@@ -17,7 +17,11 @@ get_header(); ?>
 			<header class="page-header">
 				<?php
 					the_archive_title( '<h1 class="page-title">', '</h1>' );
+					if(is_post_type_archive( 'overseasguest' )) {
+						echo '<div class="taxonomy-description">Guest from overseas</div>' ;
+					}else {
 					the_archive_description( '<div class="taxonomy-description">', '</div>' );
+				}
 				?>
 			</header><!-- .page-header -->
 

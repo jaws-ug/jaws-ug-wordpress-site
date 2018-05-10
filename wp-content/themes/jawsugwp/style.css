@@ -1298,8 +1298,14 @@ p.copyright {
   margin-bottom: 10px;
   text-align: center;
 }
+
+/* .footer-widgets-area{
+  background: #ebebe9;
+} */
+
+
 @media screen and (min-width: 601px) {
-  .session_type .section-posts {
+  .session_type .section-posts,.home .footer-widgets-area .section-posts{
     display: -webkit-flex;
     display: flex;
     -webkit-flex-wrap: wrap;
@@ -1307,11 +1313,11 @@ p.copyright {
   }
 }
 @media screen and (min-width: 601px) {
-  .session_type .section-posts .session-archive {
+  .session_type .section-posts .session-archive,.home .footer-widgets-area article {
     width: 48%;
     margin-right: 2%;
   }
-  .session_type .section-posts .session-archive:nth-of-type(2n) {
+  .session_type .section-posts .session-archive:nth-of-type(2n),.home .footer-widgets-area article:nth-of-type(2n) {
     margin-right: 2%;
     margin-left: 0;
   }
@@ -1336,12 +1342,13 @@ p.copyright {
 .supporter-archive .post-thumbnail {
   margin-bottom: 5px;
 }
+/* Add 20180128 HisakoIsaka */
 .post-thumbnail a, .post-thumbnail span {
   display: inline-block;
   border: 1px solid #dedede;
   background-color: white;
   width: 170px;
-  height: 170px;
+  height: 119px;
   position: relative;
 }
 .post-thumbnail a img, .post-thumbnail span img {

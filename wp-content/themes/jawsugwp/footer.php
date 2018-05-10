@@ -18,8 +18,44 @@
 	<?php supporter_slide(); ?>
 
 	<?php if ( is_front_page() ) : ?>
-		<section id="footer-widgets-area" class="footer-section footer-widgets-area">
-		<?php if ( is_active_sidebar( 'footer-widgets-area' ) ) : ?>
+
+	<header class="page-header">
+	<h2>Keynote</h2>
+	</header>
+	<section class="footer-section footer-widgets-area">
+	<?php /* Start the session's keynote Loop */
+		$args = array(
+			'posts_per_page' => 2,
+			'post_type'      => 'session',
+			'orderby'        => 'menu_order date',
+			'order'          => 'ASC',
+			'tax_query' => array(
+				array(
+					'taxonomy' => 'session_track',
+					'terms'    => 'keynote',
+					'field'=>'slug',
+				),
+			),
+			
+		);
+		$the_query = new WP_Query( $args );
+		//var_dump($the_query);exit();
+		if ( $the_query->have_posts() ) {
+			echo '<div class="section-posts">';
+			while ( $the_query->have_posts() ) {
+				$the_query->the_post();
+				get_template_part( 'template-parts/content', 'archive-session' );
+			}
+			echo '</div>' . "\n";
+		} else {
+			echo '<p class="no-session">Comming soon...</p>' . "\n";;
+		}
+		wp_reset_postdata();
+		echo '</section>' . "\n";
+		?>
+</section>
+<section id="footer-widgets-area" class="footer-section footer-widgets-area">
+<?php if ( is_active_sidebar( 'footer-widgets-area' ) ) : ?>
 			<?php dynamic_sidebar( 'footer-widgets-area' ); ?>
 		<?php else: ?>
 			<?php
@@ -50,7 +86,6 @@
 		<?php endif; ?>
 		</section><!-- #footer-widgets-area -->
 	<?php endif; ?>
-
 	<?php
 		$footer_section_view = get_theme_mod( 'footer_section_view' );
 		if ( ! empty( $footer_section_view ) ) : 
