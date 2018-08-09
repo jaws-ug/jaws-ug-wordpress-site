@@ -8,7 +8,7 @@ namespace Hametuha\HametuPack\ShareDaddy;
  *
  * @package hametupack
  */
-class ShareLine extends \Sharing_Source {
+class ShareLine extends AbstractShare {
 
 	protected $id = 'line';
 

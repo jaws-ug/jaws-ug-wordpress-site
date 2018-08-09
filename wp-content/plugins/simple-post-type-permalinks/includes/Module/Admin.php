@@ -6,7 +6,6 @@
  *
  * @package SPTP
  * @since   0.1.0
- *
  */
 
 namespace SPTP\Module;
@@ -41,8 +40,8 @@ class Admin extends Module {
 
 	public function setting_section() {
 		?>
-		<p><?php _e( 'Select permalink setting.' ); ?>
-			<?php _e( 'Available tags are <code>%post_id%</code>, <code>%postname%</code>, <code>%year%</code>, <code>%monthnum%</code>, <code>%day%</code>, <code>%hour%</code>, <code>%minute%</code>, <code>%second%</code>, <code>%author%</code>.' ); ?></p>
+		<p><?php esc_html_e( 'Select permalink setting.' ); ?>
+			<?php echo wp_kses_post( 'Available tags are <code>%post_id%</code>, <code>%postname%</code>, <code>%year%</code>, <code>%monthnum%</code>, <code>%1$day%</code>, <code>%hour%</code>, <code>%minute%</code>, <code>%2$second%</code>, <code>%author%</code>.' ); ?></p>
 
 		<?php
 
@@ -133,15 +132,20 @@ class Admin extends Module {
 				?>
 				<label>
 					<input type="radio" name="<?php echo esc_attr( $args ); ?>_select"
-					       value="<?php echo esc_attr( $sample_setting ) ?>" <?php
-						if ( ! $disabled ) {
-							checked( $permastruct, $sample_setting );
-						}
-						disabled( $disabled );?> />
+						   value="<?php echo esc_attr( $sample_setting ) ?>" <?php
+							if ( ! $disabled ) {
+								checked( $permastruct, $sample_setting );
+							}
+							disabled( $disabled );?> />
 					<?php
 					if ( $sample_setting ) :?>
-						<code><?php echo esc_html( home_url() ) . $this->create_permastruct( $permalink, $with_front ); ?><span
-								class="slash"><?php echo esc_attr( $slash ); ?></span></code>
+						<code><?php echo esc_url( home_url() );
+							$front = substr( $wp_rewrite->front, 0, - 1 );
+							if ( $with_front && $front ) :
+								?><span class="front"><?php echo esc_html( $front ); ?></span><?php
+							endif;
+							echo esc_html( untrailingslashit( $permalink ) );
+						?><span class="slash"><?php echo esc_attr( $slash ); ?></span></code>
 						<?php
 					else : ?>
 						Default.
@@ -157,37 +161,24 @@ class Admin extends Module {
 				<input type="radio" name="<?php echo esc_attr( $args ); ?>_select" value="custom"
 					<?php checked( $checked, false ); ?>
 					<?php disabled( $disabled ); ?> />
-				<code><?php echo esc_html( home_url() ) . $this->create_permastruct( '', $with_front ); ?></code>
+				<code><?php echo esc_url( home_url() );
+					$front = substr( $wp_rewrite->front, 0, - 1 );
+					if ( $with_front && $front ) :
+						?><span class="front"><?php echo esc_html( untrailingslashit( $front ) ); ?></span><?php
+						?><span class="slash"><?php echo esc_attr( $slash ); ?></span><?php
+					endif;
+				?></code>
 
 				<input class="regular-text code"
-				       name="<?php echo esc_attr( "sptp_{$post_type}_structure" ); ?>"
-				       id="<?php echo esc_attr( "sptp_{$post_type}_structure" ); ?>"
-				       type="text" value="/<?php echo esc_attr( $permastruct ) ?>"
+					   name="<?php echo esc_attr( "sptp_{$post_type}_structure" ); ?>"
+					   id="<?php echo esc_attr( "sptp_{$post_type}_structure" ); ?>"
+					   type="text" value="/<?php echo esc_attr( $permastruct ) ?>"
 					<?php disabled( $disabled ); ?>
 				/><span class="slash"><?php echo esc_html( $slash ); ?></span>
 			</label>
 
 		</fieldset>
 		<?php
-	}
-
-	/**
-	 * @param string $string
-	 *
-	 * @param bool $with_front
-	 *
-	 * @return string
-	 */
-	private function create_permastruct( $string = '', $with_front = false ) {
-
-		/** @var \WP_Rewrite $wp_rewrite */
-		global $wp_rewrite;
-		$front = '';
-		if ( $with_front ) {
-			$front = '<span class="front">' . esc_html( substr( $wp_rewrite->front, 0, - 1 ) ) . '</span>';
-		}
-
-		return untrailingslashit( $front . esc_html( $string ) );
 	}
 
 	public function admin_enqueue_scripts( $hook ) {

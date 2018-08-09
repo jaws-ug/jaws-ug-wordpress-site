@@ -8,7 +8,7 @@ namespace Hametuha\HametuPack\ShareDaddy;
  *
  * @package hametupack
  */
-class ShareHatebu extends \Sharing_Source {
+class ShareHatebu extends AbstractShare {
 
 	protected $id = 'hatebu';
 
@@ -75,6 +75,20 @@ class ShareHatebu extends \Sharing_Source {
 			wp_enqueue_style( 'hametupack-share-daddy' );
 			return $this->get_link( $url, $label, $title, '', 'sharing-hatebu-' . $post->ID );
 		}
+	}
+	
+	/**
+	 * Change share button
+	 *
+	 * @return array
+	 */
+	protected function amp_share_attributes() {
+		return [
+			'data-share-endpoint' => 'https://b.hatena.ne.jp/add',
+			'data-param-mode'     => 'confirm',
+			'data-param-url'      => get_permalink(),
+			'data-param-title'    => get_the_title(),
+		];
 	}
 }
 

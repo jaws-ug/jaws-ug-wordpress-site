@@ -6,7 +6,6 @@
  *
  * @package SPTP
  * @since   0.1.0
- *
  */
 
 namespace SPTP\Module;
@@ -83,21 +82,20 @@ class Option extends Module {
 	/**
 	 *
 	 * Save Options.
-	 *
 	 */
 	public function save_options() {
 
-		if ( isset( $_POST['submit'] ) and isset( $_POST['_wp_http_referer'] ) ) {
+		if ( isset( $_POST['submit'] ) and filter_input( INPUT_POST, '_wp_http_referer' ) ) {
 
-			if ( empty( $_POST['_wpnonce'] ) ) {
+			if ( ! filter_input( INPUT_POST, '_wpnonce' ) ) {
 				return false;
 			}
 
-			if ( ! wp_verify_nonce( $_POST['_wpnonce'], 'update-permalink' ) ) {
+			if ( ! wp_verify_nonce( filter_input( INPUT_POST, '_wpnonce' ), 'update-permalink' ) ) {
 				return false;
 			}
 
-			if ( false === strpos( $_POST['_wp_http_referer'], 'options-permalink.php' ) ) {
+			if ( false === strpos( filter_input( INPUT_POST, '_wp_http_referer' ), 'options-permalink.php' ) ) {
 				return false;
 			}
 
@@ -125,7 +123,7 @@ class Option extends Module {
 				$new_options[ $key ] = trim( $new_options[ $key ], '/' );
 
 				unset( $new_options[ $select_key ] );
-				//If Empty set default.
+				// If Empty set default.
 				if ( empty( $new_options[ $key ] ) ) {
 					$new_options[ $select_key ] = false;
 				}
@@ -134,7 +132,7 @@ class Option extends Module {
 			$old_options = get_option( 'sptp_options', array() );
 			$options     = array_merge( $old_options, $new_options );
 			update_option( 'sptp_options', $options );
-		}
+		}// End if().
 	}
 
 
