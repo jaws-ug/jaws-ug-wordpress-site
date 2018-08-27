@@ -19,10 +19,6 @@
 
 	<?php if ( is_front_page() ) : ?>
 
-	<header class="page-header">
-	<h2>Keynote</h2>
-	</header>
-	<section class="footer-section footer-widgets-area">
 	<?php /* Start the session's keynote Loop */
 		$args = array(
 			'posts_per_page' => 2,
@@ -39,23 +35,25 @@
 			
 		);
 		$the_query = new WP_Query( $args );
-		//var_dump($the_query);exit();
-		if ( $the_query->have_posts() ) {
-			echo '<div class="section-posts">';
-			while ( $the_query->have_posts() ) {
-				$the_query->the_post();
+	?>
+	<?php if ( $the_query->have_posts() ) : ?>
+	<section id="footer-keynote-area" class="footer-section footer-keynote-area">
+		<header class="page-header">
+			<h2>Keynote</h2>
+		</header>
+		<div class="section-posts">
+		<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+			<?php
 				get_template_part( 'template-parts/content', 'archive-session' );
-			}
-			echo '</div>' . "\n";
-		} else {
-			echo '<p class="no-session">Comming soon...</p>' . "\n";;
-		}
-		wp_reset_postdata();
-		echo '</section>' . "\n";
-		?>
-</section>
-<section id="footer-widgets-area" class="footer-section footer-widgets-area">
-<?php if ( is_active_sidebar( 'footer-widgets-area' ) ) : ?>
+			?>
+		<?php endwhile; ?>
+		</div>
+	</section><!-- #footer-keynote-area -->
+	<?php endif; ?>
+	<?php wp_reset_postdata(); ?>
+
+	<section id="footer-widgets-area" class="footer-section footer-widgets-area">
+		<?php if ( is_active_sidebar( 'footer-widgets-area' ) ) : ?>
 			<?php dynamic_sidebar( 'footer-widgets-area' ); ?>
 		<?php else: ?>
 			<?php
@@ -85,7 +83,8 @@
 			</aside>
 		<?php endif; ?>
 		</section><!-- #footer-widgets-area -->
-	<?php endif; ?>
+	<?php endif; // is_front_page() ?>
+
 	<?php
 		$footer_section_view = get_theme_mod( 'footer_section_view' );
 		if ( ! empty( $footer_section_view ) ) : 
@@ -117,7 +116,7 @@
 			}
 		?>
 		</div>
-	</div></section>
+	</div></section><!-- .jawsugwp-contact-box -->
 	<?php endif; ?>
 
 	<footer id="colophon" class="site-footer" role="contentinfo"><div class="inner">

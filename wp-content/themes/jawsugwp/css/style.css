@@ -43,7 +43,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	## Galleries
 --------------------------------------------------------------*/
 /* line 26, ../sass/mixins/_mixins-master.scss */
-.footer-widgets-area, .inner, .content-area, .site-header {
+.footer-widgets-area, .inner, .content-area, .site-header, .footer-keynote-area {
   max-width: 100%;
   padding: 0 15px;
   margin: 0 auto;
@@ -51,7 +51,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 
 @media screen and (min-width: 601px) {
   /* line 32, ../sass/mixins/_mixins-master.scss */
-  .footer-widgets-area, .inner, .content-area, .site-header {
+  .footer-widgets-area, .inner, .content-area, .site-header, .footer-keynote-area {
     max-width: 1060px;
     padding: 0 30px;
   }
@@ -1151,7 +1151,7 @@ body.home .main-image img {
   height: 100px;
   overflow: hidden;
 }
-/* line 38, ../../../../../../../../../usr/local/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 38, ../../../../../../../../../usr/local/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_clearfix.scss */
 .jawsugwp-supporter-slider:after {
   content: "";
   display: table;
@@ -1216,19 +1216,30 @@ body.home .main-image img {
 }
 
 /* line 65, ../sass/site/_footer.scss */
+.footer-keynote-area {
+  padding-top: 20px;
+}
+@media screen and (min-width: 601px) {
+  /* line 65, ../sass/site/_footer.scss */
+  .footer-keynote-area {
+    padding-top: 40px;
+  }
+}
+
+/* line 73, ../sass/site/_footer.scss */
 .footer-widgets-area {
   padding-top: 20px;
   padding-bottom: 20px;
 }
 @media screen and (min-width: 601px) {
-  /* line 65, ../sass/site/_footer.scss */
+  /* line 73, ../sass/site/_footer.scss */
   .footer-widgets-area {
     padding-top: 40px;
     padding-bottom: 40px;
   }
 }
 
-/* line 73, ../sass/site/_footer.scss */
+/* line 81, ../sass/site/_footer.scss */
 .jawsugwp-contact-box {
   background: #ebebe9;
   padding-top: 20px;
@@ -1236,24 +1247,24 @@ body.home .main-image img {
   text-align: center;
   *zoom: 1;
 }
-/* line 38, ../../../../../../../../../usr/local/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 38, ../../../../../../../../../usr/local/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_clearfix.scss */
 .jawsugwp-contact-box:after {
   content: "";
   display: table;
   clear: both;
 }
 @media screen and (min-width: 601px) {
-  /* line 73, ../sass/site/_footer.scss */
+  /* line 81, ../sass/site/_footer.scss */
   .jawsugwp-contact-box {
     padding-top: 40px;
     padding-bottom: 40px;
   }
 }
-/* line 84, ../sass/site/_footer.scss */
+/* line 92, ../sass/site/_footer.scss */
 .jawsugwp-contact-box p {
   margin: 0;
 }
-/* line 87, ../sass/site/_footer.scss */
+/* line 95, ../sass/site/_footer.scss */
 .jawsugwp-contact-box .contact-text,
 .jawsugwp-contact-box .contact-button {
   margin: 10px 0;
@@ -1261,7 +1272,7 @@ body.home .main-image img {
   font-size: 1.25rem;
 }
 @media screen and (min-width: 601px) {
-  /* line 87, ../sass/site/_footer.scss */
+  /* line 95, ../sass/site/_footer.scss */
   .jawsugwp-contact-box .contact-text,
   .jawsugwp-contact-box .contact-button {
     font-size: 24px;
@@ -1271,7 +1282,7 @@ body.home .main-image img {
     margin: 0 0 0 1em;
   }
 }
-/* line 97, ../sass/site/_footer.scss */
+/* line 105, ../sass/site/_footer.scss */
 .jawsugwp-contact-box .contact-text a,
 .jawsugwp-contact-box .contact-button a {
   display: block;
@@ -1280,7 +1291,7 @@ body.home .main-image img {
   border-radius: 3px;
   padding: 0.5em;
 }
-/* line 103, ../sass/site/_footer.scss */
+/* line 111, ../sass/site/_footer.scss */
 .jawsugwp-contact-box .contact-text a:hover, .jawsugwp-contact-box .contact-text a:focus, .jawsugwp-contact-box .contact-text a:active,
 .jawsugwp-contact-box .contact-button a:hover,
 .jawsugwp-contact-box .contact-button a:focus,
@@ -1290,84 +1301,84 @@ body.home .main-image img {
   background-color: #ff9c08;
 }
 @media screen and (min-width: 601px) {
-  /* line 97, ../sass/site/_footer.scss */
+  /* line 105, ../sass/site/_footer.scss */
   .jawsugwp-contact-box .contact-text a,
   .jawsugwp-contact-box .contact-button a {
     display: inline-block;
     padding: 0.5em 5em;
   }
 }
-/* line 117, ../sass/site/_footer.scss */
+/* line 125, ../sass/site/_footer.scss */
 .jawsugwp-contact-box .contact-other-text p {
   margin-top: 1em;
 }
-/* line 120, ../sass/site/_footer.scss */
+/* line 128, ../sass/site/_footer.scss */
 .jawsugwp-contact-box .contact-other-text a {
   text-decoration: underline;
 }
 
-/* line 126, ../sass/site/_footer.scss */
+/* line 134, ../sass/site/_footer.scss */
 .site-footer {
   background: #161616;
   color: #e6e6e6;
   padding-top: 20px;
   padding-bottom: 20px;
 }
-/* line 129, ../sass/site/_footer.scss */
+/* line 137, ../sass/site/_footer.scss */
 .site-footer a {
   color: #e6e6e6;
 }
-/* line 131, ../sass/site/_footer.scss */
+/* line 139, ../sass/site/_footer.scss */
 .site-footer a:hover, .site-footer a:focus, .site-footer a:active {
   color: #ff9c08;
   text-decoration: underline;
 }
 @media screen and (min-width: 601px) {
-  /* line 126, ../sass/site/_footer.scss */
+  /* line 134, ../sass/site/_footer.scss */
   .site-footer {
     padding-top: 40px;
     padding-bottom: 40px;
   }
 }
 
-/* line 147, ../sass/site/_footer.scss */
+/* line 155, ../sass/site/_footer.scss */
 .site-info {
   text-align: center;
   margin-top: 20px;
 }
 @media screen and (min-width: 601px) {
-  /* line 147, ../sass/site/_footer.scss */
+  /* line 155, ../sass/site/_footer.scss */
   .site-info {
     margin-top: 40px;
   }
 }
 
-/* line 154, ../sass/site/_footer.scss */
+/* line 162, ../sass/site/_footer.scss */
 .social-button {
   font-size: 36px;
   font-size: 2.25rem;
   margin-bottom: 10px;
 }
-/* line 157, ../sass/site/_footer.scss */
+/* line 165, ../sass/site/_footer.scss */
 .social-button ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
-/* line 162, ../sass/site/_footer.scss */
+/* line 170, ../sass/site/_footer.scss */
 .social-button li {
   display: inline-block;
   margin: 0 5px;
 }
 
-/* line 167, ../sass/site/_footer.scss */
+/* line 175, ../sass/site/_footer.scss */
 p.copyright {
   font-size: 11px;
   font-size: 0.6875rem;
   margin: 0;
 }
 @media screen and (min-width: 601px) {
-  /* line 167, ../sass/site/_footer.scss */
+  /* line 175, ../sass/site/_footer.scss */
   p.copyright {
     font-size: 14px;
     font-size: 0.875rem;
@@ -1507,9 +1518,18 @@ p.copyright {
   margin-bottom: 10px;
   text-align: center;
 }
+/* line 86, ../sass/site/primary/_posts-and-pages.scss */
+.session_type .no-session {
+  padding: 20px;
+  background: #ffffff;
+  border: 1px solid #dedede;
+  text-align: center;
+  font-weight: bold;
+}
+
 @media screen and (min-width: 601px) {
-  /* line 86, ../sass/site/primary/_posts-and-pages.scss */
-  .session_type .section-posts {
+  /* line 94, ../sass/site/primary/_posts-and-pages.scss */
+  .section-posts {
     display: -webkit-flex;
     display: flex;
     -webkit-flex-wrap: wrap;
@@ -1517,24 +1537,16 @@ p.copyright {
   }
 }
 @media screen and (min-width: 601px) {
-  /* line 91, ../sass/site/primary/_posts-and-pages.scss */
-  .session_type .section-posts .session-archive {
+  /* line 99, ../sass/site/primary/_posts-and-pages.scss */
+  .section-posts .session-archive {
     width: 48%;
     margin-right: 2%;
   }
-  /* line 95, ../sass/site/primary/_posts-and-pages.scss */
-  .session_type .section-posts .session-archive:nth-of-type(2n) {
-    margin-right: 2%;
-    margin-left: 0;
+  /* line 103, ../sass/site/primary/_posts-and-pages.scss */
+  .section-posts .session-archive:nth-of-type(2n) {
+    margin-left: 2%;
+    margin-right: 0;
   }
-}
-/* line 102, ../sass/site/primary/_posts-and-pages.scss */
-.session_type .no-session {
-  padding: 20px;
-  background: #ffffff;
-  border: 1px solid #dedede;
-  text-align: center;
-  font-weight: bold;
 }
 
 /* line 111, ../sass/site/primary/_posts-and-pages.scss */
@@ -1797,7 +1809,7 @@ p.copyright {
   margin-top: 15px;
   *zoom: 1;
 }
-/* line 38, ../../../../../../../../../usr/local/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 38, ../../../../../../../../../usr/local/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_clearfix.scss */
 .entry-header .sharedaddy:after {
   content: "";
   display: table;

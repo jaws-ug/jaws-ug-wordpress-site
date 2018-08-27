@@ -62,6 +62,14 @@
 	overflow: hidden;
 }
 
+.footer-keynote-area {
+	@extend %inner;
+	padding-top: 20px;
+	@include mqPC {
+		padding-top: 40px;
+	}
+}
+
 .footer-widgets-area {
 	padding-top: 20px;
 	padding-bottom: 20px;
