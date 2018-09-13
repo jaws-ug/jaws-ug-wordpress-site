@@ -76,7 +76,7 @@ function jawsugwp_publicize_save_meta( $submit_post, $post_id, $service_name, $c
 		$prefix = "[サポーター情報更新] ";
 	}
 	$title   = get_the_title( $post_id );
-	$suffix  = " #jawsdays #jawsug";
+	$suffix  = " #jawsug";
 	$link    = wp_get_shortlink( $post_id );
 	$excerpt = get_the_excerpt( $post_id );
 
