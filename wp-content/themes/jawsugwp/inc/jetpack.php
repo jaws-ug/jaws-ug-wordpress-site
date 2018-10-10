@@ -76,7 +76,13 @@ function jawsugwp_publicize_save_meta( $submit_post, $post_id, $service_name, $c
 		$prefix = "[サポーター情報更新] ";
 	}
 	$title   = get_the_title( $post_id );
-	$suffix  = " #jawsug";
+	$twitter_hash  = get_theme_mod( 'twitter_hash', 'jawsug,jawsdays' );
+	$twitter_hashs = '';
+	if ( ! empty( $twitter_hash ) ) {
+		$twitter_hashs = ' #' . str_replace( ',', ' #', $twitter_hash );
+		
+	}
+	$suffix  = $twitter_hashs;
 	$link    = wp_get_shortlink( $post_id );
 	$excerpt = get_the_excerpt( $post_id );
 
