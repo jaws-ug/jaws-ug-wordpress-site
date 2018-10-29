@@ -1,7 +1,7 @@
 <?php
 /*
  * Plugin Name: C3 Cloudfront Cache Controller
- * Version: 5.4.0
+ * Version: 5.4.2
  * Plugin URI:https://github.com/amimoto-ami/c3-cloudfront-clear-cache
  * Description: Manage CloudFront Cache and provide some fixtures.
  * Author: hideokamoto
@@ -15,8 +15,8 @@ define( 'C3_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
 define( 'C3_PLUGIN_ROOT', __FILE__ );
 
 // fixtures
-require_once( 'module/model/fixtures/wp_is_mobile.php' );
-require_once( 'module/model/fixtures/avoid_preview_cache.php' );
+require_once( __DIR__ . '/module/model/fixtures/wp_is_mobile.php' );
+require_once( __DIR__ . '/module/model/fixtures/avoid_preview_cache.php' );
 
 $c3 = C3_Controller::get_instance();
 $c3->init();
