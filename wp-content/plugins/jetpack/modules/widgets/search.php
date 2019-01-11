@@ -246,6 +246,7 @@ class Jetpack_Search_Widget extends WP_Widget {
 				'user_sort_enabled'  => true,
 				'sort'               => self::DEFAULT_SORT,
 				'filters'            => array( array() ),
+				'post_types'         => array(),
 			)
 		);
 
@@ -264,6 +265,19 @@ class Jetpack_Search_Widget extends WP_Widget {
 		$instance = $this->jetpack_search_populate_defaults( $instance );
 
 		$display_filters = false;
+
+		if ( Jetpack::is_development_mode() ) {
+			echo $args['before_widget'];
+			?><div id="<?php echo esc_attr( $this->id ); ?>-wrapper">
+				<div class="jetpack-search-sort-wrapper">
+					<label>
+						<?php esc_html_e( 'Jetpack Search not supported in Development Mode', 'jetpack' ); ?>
+					</label>
+				</div>
+			</div><?php
+			echo $args['after_widget'];
+			return;
+		}
 
 		if ( is_search() ) {
 			if ( Jetpack_Search_Helpers::should_rerun_search_in_customizer_preview() ) {

@@ -131,16 +131,10 @@ function custom_post_type_session() {
 		'supports'            => array( 'title', 'editor', 'excerpt', 'page-attributes', 'revisions', 'publicize', 'wpcom-markdown' ),
 		'hierarchical'        => true,
 		'public'              => true,
-		'show_ui'             => true,
-		'show_in_menu'        => true,
-		'show_in_nav_menus'   => true,
-		'show_in_admin_bar'   => true,
+		'show_in_rest'        => true,
 		'menu_position'       => 20,
 		'menu_icon'           => 'dashicons-megaphone',
-		'can_export'          => true,
 		'has_archive'         => true,
-		'exclude_from_search' => false,
-		'publicly_queryable'  => true,
 		'capability_type'     => 'post',
 		'rewrite'             => array( 'slug' => 'session', 'with_front' => false ),
 		'sptp_permalink_structure' => 'session/%post_id%',
@@ -207,10 +201,7 @@ function custom_post_type_supporter() {
 		'supports'            => array( 'title', 'editor', 'excerpt', 'thumbnail', 'revisions', 'publicize', 'wpcom-markdown' ),
 		'hierarchical'        => false,
 		'public'              => true,
-		'show_ui'             => true,
-		'show_in_menu'        => true,
-		'show_in_nav_menus'   => true,
-		'show_in_admin_bar'   => true,
+		'show_in_rest'        => true,
 		'menu_position'       => 20,
 		'menu_icon'           => 'dashicons-awards',
 		'can_export'          => true,
@@ -282,12 +273,9 @@ function custom_post_type_overseasguest() {
 		'description'         => _x( 'overseasguest', 'Post Type description', 'jawsugwp' ),
 		'labels'              => $labels,
 		'supports'            => array( 'title', 'editor', 'excerpt', 'thumbnail', 'revisions', 'publicize', 'wpcom-markdown' ),
-		'hierarchical'        => false,
+		'hierarchical'        => true,
 		'public'              => true,
-		'show_ui'             => true,
-		'show_in_menu'        => true,
-		'show_in_nav_menus'   => true,
-		'show_in_admin_bar'   => true,
+		'show_in_rest'        => true,
 		'menu_position'       => 20,
 		'menu_icon'           => 'dashicons-awards',
 		'can_export'          => true,
@@ -387,7 +375,7 @@ function jaws_modify_main_query( $query ) {
 		return;
 	}
 
-	// サポーターとセッションの投稿タイプははアーカイブを作成しない
+	// サポーターとセッションの投稿タイプのアーカイブはページ送りを作成しない
 	if ( $query->is_post_type_archive( array( 'supporter', 'session' ) ) ) {
 		$query->set( 'posts_per_archive_page', -1 );
 		$query->set( 'orderby', 'date' );
